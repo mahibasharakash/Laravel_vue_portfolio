@@ -18,5 +18,5 @@ use App\Http\Controllers\AppController;
 | portfolio route
 */
 
-Route::get('', [AppController::class, 'portfolio'])->where('any', '.*')->name('lvs.portfolio');
-Route::get('{any}', [AppController::class, 'portfolio'])->where('any', '.*')->name('lvs.portfolio.any');
+Route::get('', [AppController::class, 'app'])->where('any', '.*')->name('lvs.app');
+Route::get('{any}', [AppController::class, 'app'])->where('any', '.*')->name('lvs.app.any');
