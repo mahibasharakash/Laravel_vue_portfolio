@@ -1,8 +1,8 @@
-name: Deploy to cPanel
+name: Deploy to cPanel via SFTP
 
 on:
   push:
-    branches: [ "main" ]   # change if you deploy from another branch
+    branches: [ "main" ]
 
 jobs:
   deploy:
@@ -11,18 +11,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # optional: if you need build step (Node.js example)
-      # - name: Install dependencies
-      #   run: npm install
-      # - name: Build project
-      #   run: npm run build
-
-      - name: Deploy via FTP
+      - name: Deploy via SFTP
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
           server: ${{ secrets.SERVER_URL }}
+          port: 22
           username: ${{ secrets.CPANEL_USERNAME }}
           password: ${{ secrets.CPANEL_PASSWORD }}
-          protocol: ftps
-          local-dir: ./   # or ./dist if you build
-          server-dir: ${{ secrets.CPANEL_DIR }}
+          local_path: ./       # path in your repo you want to upload
+          remote_path: ${{ secrets.CPANEL_DIR }}  # remote folder
+          sftp_only: true
