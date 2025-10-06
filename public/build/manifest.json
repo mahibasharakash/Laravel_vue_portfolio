@@ -1,13 +1,29 @@
 {
+  "_vue-router-D4s667Lw.js": {
+    "file": "assets/vue-router-D4s667Lw.js",
+    "name": "vue-router"
+  },
   "resources/css/app.css": {
-    "file": "assets/app-DgQB1JJR.css",
+    "file": "assets/app-DQQKlWyN.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
+  "resources/js/blog/app.js": {
+    "file": "assets/app-DhZmqgQq.js",
+    "name": "app",
+    "src": "resources/js/blog/app.js",
+    "isEntry": true,
+    "imports": [
+      "_vue-router-D4s667Lw.js"
+    ]
+  },
   "resources/js/portfolio/app.js": {
-    "file": "assets/app-Boi6RHt0.js",
+    "file": "assets/app-DPLnyOsa.js",
     "name": "app",
     "src": "resources/js/portfolio/app.js",
-    "isEntry": true
+    "isEntry": true,
+    "imports": [
+      "_vue-router-D4s667Lw.js"
+    ]
   }
 }

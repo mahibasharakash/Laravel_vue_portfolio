@@ -33,7 +33,9 @@
                     <div class="text-white text-xl mb-5"> Newsletter </div>
                     <form class="w-full grid grid-cols-1 gap-3">
                         <input type="text" name="newsletter" required autocomplete="off" class="min-h-[45px] max-h-[45px] text-sm w-full border-0 bg-white/15 text-white rounded-md py-2 px-4 outline-0 duration-500" placeholder="Enter Your Email" />
-                        <button type="submit" class="min-h-[45px] max-h-[45px] cursor-pointer min-w-[120px] text-sm rounded-md py-2 px-4 text-white bg-amber-600 hover:bg-amber-800 duration-500"> Send </button>
+                        <div>
+                            <button type="submit" class="min-h-[45px] max-h-[45px] cursor-pointer min-w-[120px] text-sm rounded-md py-2 px-4 text-white bg-amber-600 hover:bg-amber-800 duration-500"> Send </button>
+                        </div>
                     </form>
                 </div>
             </div>

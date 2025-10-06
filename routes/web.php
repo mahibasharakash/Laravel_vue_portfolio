@@ -15,10 +15,8 @@ use App\Http\Controllers\AppController;
 */
 
 /*
-| portfolio Route
+| portfolio route
 */
 
-Route::get('auth/{any}', [AppController::class, 'portfolio'])->where('any', '.*')->name('lvs.portfolio.auth.any');
-Route::get('auth', function () { return redirect()->route('lvs.portfolio.auth.any', 'login'); } );
 Route::get('', [AppController::class, 'portfolio'])->where('any', '.*')->name('lvs.portfolio');
 Route::get('{any}', [AppController::class, 'portfolio'])->where('any', '.*')->name('lvs.portfolio.any');
