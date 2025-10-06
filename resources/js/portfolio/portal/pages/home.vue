@@ -23,7 +23,7 @@
             <!-- / description -->
 
             <!-- link -->
-            <a href="javascript:void(0)" class="inline-block text-sm shadow-none hover:shadow-inner decoration-0 text-white bg-amber-600 duration-500 hover:bg-amber-700 rounded-md px-10 py-3">
+            <a :href="'pdf/resume.pdf'" target="_blank" class="inline-block text-sm shadow-none hover:shadow-inner decoration-0 text-white bg-amber-600 duration-500 hover:bg-amber-700 rounded-md px-10 py-3">
                 Download CV
             </a>
             <!-- / link -->
