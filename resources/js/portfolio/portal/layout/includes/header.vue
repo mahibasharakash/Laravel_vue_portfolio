@@ -27,18 +27,6 @@
                 <RouterLink :to="{name:'blogs'}" :class="{ 'text-amber-500' : $route.name === 'blogs', 'text-black lg:text-white' : $route.name !== 'blogs' }" class="decoration-0 text-sm duration-500 hover:text-amber-500" @click="closeSidebar()">
                     Blogs
                 </RouterLink>
-                <RouterLink v-if="!profileData" :to="{name:'login'}" :class="{ 'text-amber-500' : $route.name === 'login', 'text-black lg:text-white' : $route.name !== 'login' }" class="decoration-0 text-sm duration-500 hover:text-amber-500" @click="closeSidebar()">
-                    Login
-                </RouterLink>
-                <RouterLink v-if="!profileData" :to="{name:'registration'}" :class="{ 'text-amber-500' : $route.name === 'registration', 'text-black lg:text-white' : $route.name !== 'registration' }" class="decoration-0 text-sm duration-500 hover:text-amber-500" @click="closeSidebar()">
-                    Registration
-                </RouterLink>
-                <RouterLink v-if="profileData" :to="{name:'details'}" :class="{ 'text-amber-500' : $route.name === 'details', 'text-black lg:text-white' : $route.name !== 'details' }" class="decoration-0 text-sm duration-500 hover:text-amber-500" @click="closeSidebar()">
-                    Details
-                </RouterLink>
-                <a v-if="profileData" href="javascript:void(0)" class="text-black lg:text-white decoration-0 text-sm duration-500 hover:text-amber-500" @click="closeSidebar()">
-                    Logout
-                </a>
             </div>
         </div>
     </header>
