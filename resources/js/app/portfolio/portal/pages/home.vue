@@ -1,7 +1,7 @@
 <template>
 
     <!-- hero section -->
-    <section class="w-full relative z-5">
+    <section id="home" class="w-full relative z-5">
 
         <!-- slider -->
         <img :src="'/images/slider-background.jpg'" class="w-full object-cover bg-cover min-h-[650px] max-h-[650px]" alt="slider" />
@@ -34,7 +34,7 @@
     <!-- / hero section -->
 
     <!-- about section -->
-    <section class="w-full bg-white">
+    <section id="about_us" class="w-full bg-white">
         <div class="px-10 max-w-7xl mx-auto w-full flex flex-wrap items-center">
             <div class="w-full lg:w-3/6 py-16 flex justify-center">
 
@@ -132,7 +132,7 @@
     <!-- / count section -->
 
     <!-- creative section -->
-    <section class="w-full bg-gray-100">
+    <section id="service" class="w-full bg-gray-100">
         <div class="px-10 max-w-7xl mx-auto w-full py-16">
 
             <!-- breadcrumb text -->
@@ -294,7 +294,7 @@
     <!-- / creative section -->
 
     <!-- why choose us section -->
-    <section class="w-full bg-white">
+    <section id="why_choose_us" class="w-full bg-white">
         <div class="px-10 max-w-7xl mx-auto w-full py-16 flex flex-wrap">
             <div class="w-full lg:w-1/2">
 
@@ -416,7 +416,7 @@
     <!-- / why choose us section -->
 
     <!-- creative portfolio section -->
-    <section class="w-full bg-gray-100">
+    <section id="portfolio" class="w-full bg-gray-100">
         <div class="px-10 max-w-7xl mx-auto w-full py-16">
 
             <!-- breadcrumb text -->
@@ -518,7 +518,7 @@
     <!-- / creative portfolio section -->
 
     <!-- testimonial section -->
-    <section class="w-full bg-white">
+    <section id="testimonial" class="w-full bg-white">
         <div class="px-10 max-w-7xl mx-auto w-full py-16">
             <div class="w-full">
 
@@ -669,7 +669,7 @@
     <!-- / testimonial section -->
 
     <!-- creative blog section -->
-    <section class="w-full bg-gray-100">
+    <section id="blog" class="w-full bg-gray-100">
         <div class="px-10 max-w-7xl mx-auto w-full py-16">
 
             <!-- breadcrumb text -->

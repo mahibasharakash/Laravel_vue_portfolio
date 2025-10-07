@@ -6,8 +6,6 @@ const portfolio_title = 'Portfolio Template - ';
 
 import portfolio_portal_layout from "../portfolio/portal/layout/layout.vue";
 import portfolio_home from "../portfolio/portal/pages/home.vue";
-import portfolio_portfolio from "../portfolio/portal/pages/portfolio.vue";
-import portfolio_blogs from "../portfolio/portal/pages/blogs.vue";
 
 // blog authentication and portal
 
@@ -41,9 +39,9 @@ import ecommerce_portal_about from "../ecommerce/portal/pages/about.vue";
 import ecommerce_portal_contact from "../ecommerce/portal/pages/contact.vue";
 import ecommerce_portal_shop from "../ecommerce/portal/pages/shop.vue";
 
-// learning management system authentication and portal
+// learning management authentication and portal
 
-const learning_management_title = 'Learning Management System Template - ';
+const learning_management_title = 'Learning Management Template - ';
 
 import learning_management_auth_layout from "../learning-management/authentication/layout/layout.vue";
 import learning_management_auth_login from "../learning-management/authentication/pages/login.vue";
@@ -60,7 +58,7 @@ import learning_management_portal_course from "../learning-management/portal/pag
 
 // chat application authentication and portal
 
-const chat_application_title = 'Learning Management System Template - ';
+const chat_application_title = 'Chat Application Template - ';
 
 import chat_application_auth_layout from "../chat-application/authentication/layout/layout.vue";
 import chat_application_auth_login from "../chat-application/authentication/pages/login.vue";
@@ -75,20 +73,37 @@ import chat_application_portal_home from "../chat-application/portal/pages/home.
 import chat_application_user_layout from "../chat-application/user/layout/layout.vue";
 import chat_application_user_chat from "../chat-application/user/pages/chat.vue";
 
+// hospital authentication and portal
+
+const hospital_title = 'Hospital Template - ';
+
+import hospital_auth_layout from "../hospital/authentication/layout/layout.vue";
+import hospital_auth_login from "../hospital/authentication/pages/login.vue";
+import hospital_auth_registration from "../hospital/authentication/pages/registration.vue";
+import hospital_auth_forgot from "../hospital/authentication/pages/forgot.vue";
+import hospital_auth_reset from "../hospital/authentication/pages/reset.vue";
+import hospital_auth_verification from "../hospital/authentication/pages/verification.vue";
+
+import hospital_portal_layout from "../hospital/portal/layout/layout.vue";
+import hospital_portal_home from "../hospital/portal/pages/home.vue";
+import hospital_portal_about from "../hospital/portal/pages/about.vue";
+import hospital_portal_contact from "../hospital/portal/pages/contact.vue";
+import hospital_portal_appointment from "../hospital/portal/pages/appointment.vue";
+
 const routes = [
+
     {
         path: '/', name: 'portfolio_portal_layout', component: portfolio_portal_layout,
         children: [
             { path: '', name: 'portfolio_home', component: portfolio_home, meta: {title: portfolio_title + 'Home'} },
-            { path: 'portfolio', name: 'portfolio_portfolio', component: portfolio_portfolio, meta: {title: portfolio_title + 'Portfolio'} },
-            { path: 'blogs', name: 'portfolio_blogs', component: portfolio_blogs, meta: {title: portfolio_title + 'Blogs'} },
         ]
     },
+
     {
         path: '/blog-template', name: 'blog_portal_layout', component: blog_portal_layout,
         children: [
             { path: '', name: 'blog_portal_home', component: blog_portal_home, meta: {title: blog_title + 'Home'} },
-            { path: 'articles', name: 'blog_portal_articles', component: blog_portal_articles, meta: {title: blog_title + 'Home'} },
+            { path: 'articles/:slug', name: 'blog_portal_articles', component: blog_portal_articles, meta: {title: blog_title + 'Home'} },
             {
                 path: '/auth', name: 'blog_auth_layout', component: blog_auth_layout,
                 children: [
@@ -101,6 +116,7 @@ const routes = [
             },
         ]
     },
+
     {
         path: '/ecommerce-template', name: 'ecommerce_portal_layout', component: ecommerce_portal_layout,
         children: [
@@ -120,6 +136,7 @@ const routes = [
             },
         ]
     },
+
     {
         path: '/learning-management-system-template', name: 'learning_management_portal_layout', component: learning_management_portal_layout,
         children: [
@@ -139,6 +156,7 @@ const routes = [
             },
         ]
     },
+
     {
         path: '/chat-application-template', name: 'chat_application_portal_layout', component: chat_application_portal_layout,
         children: [
@@ -161,6 +179,27 @@ const routes = [
             },
         ]
     },
+
+    {
+        path: '/hospital-template', name: 'hospital_portal_layout', component: hospital_portal_layout,
+        children: [
+            { path: '', name: 'hospital_portal_home', component: hospital_portal_home, meta: {title: hospital_title + 'Home'} },
+            { path: 'about', name: 'hospital_portal_about', component: hospital_portal_about, meta: {title: hospital_title + 'About'} },
+            { path: 'contact', name: 'hospital_portal_contact', component: hospital_portal_contact, meta: {title: hospital_title + 'Contact'} },
+            { path: 'appointment', name: 'hospital_portal_appointment', component: hospital_portal_appointment, meta: {title: hospital_title + 'Appointment'} },
+            {
+                path: '/auth', name: 'hospital_auth_layout', component: hospital_auth_layout,
+                children: [
+                    { path: 'login', name: 'hospital_auth_login', component: hospital_auth_login, meta: {title: hospital_title + 'Login'} },
+                    { path: 'registration', name: 'hospital_auth_registration', component: hospital_auth_registration, meta: {title: hospital_title + 'Registration'} },
+                    { path: 'forgot', name: 'hospital_auth_forgot', component: hospital_auth_forgot, meta: {title: hospital_title + 'Forgot'} },
+                    { path: 'reset', name: 'hospital_auth_reset', component: hospital_auth_reset, meta: {title: hospital_title + 'Reset'} },
+                    { path: 'verification', name: 'hospital_auth_verification', component: hospital_auth_verification, meta: {title: hospital_title + 'Verification'} },
+                ]
+            },
+        ]
+    },
+
 ];
 
 const router = createRouter({

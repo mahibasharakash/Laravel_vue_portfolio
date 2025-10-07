@@ -18,15 +18,27 @@
                         </svg>
                     </button>
                 </div>
-                <RouterLink :to="{name:'portfolio_home'}" :class="{ 'text-amber-500' : $route.name === 'home', 'text-black lg:text-white' : $route.name !== 'home' }" class="decoration-0 text-sm duration-500 hover:text-amber-500" @click="closeSidebar()">
+                <button class="inline-block outline-0 bg-transparent text-black lg:text-white decoration-0 text-sm duration-500 hover:text-amber-500" @click="closeSidebar();scrollToSection('home')">
                     Home
-                </RouterLink>
-                <RouterLink :to="{name:'portfolio_portfolio'}" :class="{ 'text-amber-500' : $route.name === 'portfolio', 'text-black lg:text-white' : $route.name !== 'portfolio' }" class="decoration-0 text-sm duration-500 hover:text-amber-500" @click="closeSidebar()">
+                </button>
+                <button class="inline-block outline-0 bg-transparent text-black lg:text-white decoration-0 text-sm duration-500 hover:text-amber-500" @click="closeSidebar();scrollToSection('about_us')">
+                    About Us
+                </button>
+                <button class="inline-block outline-0 bg-transparent text-black lg:text-white decoration-0 text-sm duration-500 hover:text-amber-500" @click="closeSidebar();scrollToSection('service')">
+                    Services
+                </button>
+                <button class="inline-block outline-0 bg-transparent text-black lg:text-white decoration-0 text-sm duration-500 hover:text-amber-500" @click="closeSidebar();scrollToSection('why_choose_us')">
+                    Why Choose Us
+                </button>
+                <button class="inline-block outline-0 bg-transparent text-black lg:text-white decoration-0 text-sm duration-500 hover:text-amber-500" @click="closeSidebar();scrollToSection('portfolio')">
                     Portfolio
-                </RouterLink>
-                <RouterLink :to="{name:'portfolio_blogs'}" :class="{ 'text-amber-500' : $route.name === 'blogs', 'text-black lg:text-white' : $route.name !== 'blogs' }" class="decoration-0 text-sm duration-500 hover:text-amber-500" @click="closeSidebar()">
-                    Blogs
-                </RouterLink>
+                </button>
+                <button class="inline-block outline-0 bg-transparent text-black lg:text-white decoration-0 text-sm duration-500 hover:text-amber-500" @click="closeSidebar();scrollToSection('testimonial')">
+                    Testimonial
+                </button>
+                <button class="inline-block outline-0 bg-transparent text-black lg:text-white decoration-0 text-sm duration-500 hover:text-amber-500" @click="closeSidebar();scrollToSection('blog')">
+                    Recent Updates
+                </button>
             </div>
         </div>
     </header>
@@ -64,7 +76,15 @@ export default {
         },
         closeSidebar() {
             this.isSidebarActive = false;
-        }
+        },
+        scrollToSection(id) {
+            const section = document.getElementById(id);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+            this.closeSidebar();
+            history.replaceState(null, null, ' ');
+        },
     }
 }
 
