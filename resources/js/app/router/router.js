@@ -20,7 +20,6 @@ import blog_auth_verification from "../blog/authentication/pages/verification.vu
 
 import blog_portal_layout from "../blog/portal/layout/layout.vue";
 import blog_portal_home from "../blog/portal/pages/home.vue";
-import blog_portal_articles from "../blog/portal/pages/articles.vue";
 
 // ecommerce authentication and portal
 
@@ -103,7 +102,6 @@ const routes = [
         path: '/blog-template', name: 'blog_portal_layout', component: blog_portal_layout,
         children: [
             { path: '', name: 'blog_portal_home', component: blog_portal_home, meta: {title: blog_title + 'Home'} },
-            { path: 'articles/:slug', name: 'blog_portal_articles', component: blog_portal_articles, meta: {title: blog_title + 'Home'} },
             {
                 path: '/auth', name: 'blog_auth_layout', component: blog_auth_layout,
                 children: [

@@ -18,25 +18,25 @@
                         </svg>
                     </button>
                 </div>
-                <button class="inline-block outline-0 bg-transparent text-black lg:text-white decoration-0 text-sm duration-500 hover:text-amber-500" @click="closeSidebar();scrollToSection('home')">
+                <button type="button" :class="[currentSection === 'home' ? 'text-amber-500' : 'text-black lg:text-white hover:text-amber-500']" class="cursor-pointer inline-block outline-0 bg-transparent decoration-0 text-sm duration-500 hover:text-amber-500" @click="closeSidebar();scrollToSection('home')">
                     Home
                 </button>
-                <button class="inline-block outline-0 bg-transparent text-black lg:text-white decoration-0 text-sm duration-500 hover:text-amber-500" @click="closeSidebar();scrollToSection('about_us')">
+                <button type="button" :class="[currentSection === 'about_us' ? 'text-amber-500' : 'text-black lg:text-white hover:text-amber-500']" class="cursor-pointer inline-block outline-0 bg-transparent decoration-0 text-sm duration-500 hover:text-amber-500" @click="closeSidebar();scrollToSection('about_us')">
                     About Us
                 </button>
-                <button class="inline-block outline-0 bg-transparent text-black lg:text-white decoration-0 text-sm duration-500 hover:text-amber-500" @click="closeSidebar();scrollToSection('service')">
+                <button type="button" :class="[currentSection === 'service' ? 'text-amber-500' : 'text-black lg:text-white hover:text-amber-500']" class="cursor-pointer inline-block outline-0 bg-transparent decoration-0 text-sm duration-500 hover:text-amber-500" @click="closeSidebar();scrollToSection('service')">
                     Services
                 </button>
-                <button class="inline-block outline-0 bg-transparent text-black lg:text-white decoration-0 text-sm duration-500 hover:text-amber-500" @click="closeSidebar();scrollToSection('why_choose_us')">
+                <button type="button" :class="[currentSection === 'why_choose_us' ? 'text-amber-500' : 'text-black lg:text-white hover:text-amber-500']" class="cursor-pointer inline-block outline-0 bg-transparent decoration-0 text-sm duration-500 hover:text-amber-500" @click="closeSidebar();scrollToSection('why_choose_us')">
                     Why Choose Us
                 </button>
-                <button class="inline-block outline-0 bg-transparent text-black lg:text-white decoration-0 text-sm duration-500 hover:text-amber-500" @click="closeSidebar();scrollToSection('portfolio')">
+                <button type="button" :class="[currentSection === 'portfolio' ? 'text-amber-500' : 'text-black lg:text-white hover:text-amber-500']" class="cursor-pointer inline-block outline-0 bg-transparent decoration-0 text-sm duration-500 hover:text-amber-500" @click="closeSidebar();scrollToSection('portfolio')">
                     Portfolio
                 </button>
-                <button class="inline-block outline-0 bg-transparent text-black lg:text-white decoration-0 text-sm duration-500 hover:text-amber-500" @click="closeSidebar();scrollToSection('testimonial')">
+                <button type="button" :class="[currentSection === 'testimonial' ? 'text-amber-500' : 'text-black lg:text-white hover:text-amber-500']" class="cursor-pointer inline-block outline-0 bg-transparent decoration-0 text-sm duration-500 hover:text-amber-500" @click="closeSidebar();scrollToSection('testimonial')">
                     Testimonial
                 </button>
-                <button class="inline-block outline-0 bg-transparent text-black lg:text-white decoration-0 text-sm duration-500 hover:text-amber-500" @click="closeSidebar();scrollToSection('blog')">
+                <button type="button" :class="[currentSection === 'blog' ? 'text-amber-500' : 'text-black lg:text-white hover:text-amber-500']" class="cursor-pointer inline-block outline-0 bg-transparent decoration-0 text-sm duration-500 hover:text-amber-500" @click="closeSidebar();scrollToSection('blog')">
                     Recent Updates
                 </button>
             </div>
@@ -52,17 +52,19 @@ export default {
         return {
             isScrolled: false,
             isSidebarActive: false,
-            profileData: null,
+            currentSection: 'home',
+            observer: null,
         }
     },
     mounted() {
-        this.handleScroll = this.handleScroll.bind(this);
         window.addEventListener('scroll', this.handleScroll, { passive: true });
-        window.addEventListener('click', (event) => this.handleOutSideClick());
+        window.addEventListener('click', this.handleOutSideClick);
+        this.initSectionObserver();
     },
     beforeUnmount() {
         window.removeEventListener('scroll', this.handleScroll);
-        window.removeEventListener('click', (event) => this.handleOutSideClick());
+        window.removeEventListener('click', this.handleOutSideClick);
+        if (this.observer) this.observer.disconnect();
     },
     methods: {
         handleScroll() {
@@ -78,12 +80,25 @@ export default {
             this.isSidebarActive = false;
         },
         scrollToSection(id) {
-            const section = document.getElementById(id);
-            if (section) {
-                section.scrollIntoView({ behavior: 'smooth' });
-            }
-            this.closeSidebar();
+            const el = document.getElementById(id);
+            if (el) el.scrollIntoView({ behavior: 'smooth' });
             history.replaceState(null, null, ' ');
+        },
+        initSectionObserver() {
+            const sections = document.querySelectorAll('section[id]');
+            this.observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            this.currentSection = entry.target.id;
+                        }
+                    });
+                },
+                {
+                    threshold: 0.5, // section visible at least 50%
+                }
+            );
+            sections.forEach((sec) => this.observer.observe(sec));
         },
     }
 }
