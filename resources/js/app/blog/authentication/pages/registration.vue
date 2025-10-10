@@ -1,8 +1,8 @@
 <template>
 
-    <form class="min-w-[340px] sm:min-w-[410px] mx-auto px-8 py-5 bg-gray-100 shadow-md">
-        <div class="text-xl font-medium mb-1">  </div>
-        <div class="text-xs font-medium mb-5">  </div>
+    <form class="min-w-[340px] sm:min-w-[410px] mx-auto px-8 py-10 bg-gray-100 shadow-md">
+        <div class="text-2xl font-medium mb-1"> SignUp </div>
+        <div class="text-xs font-medium mb-7 text-gray-700"> Enter information as take data </div>
         <div class="w-full block mb-4">
             <label for="name" class="block mb-2 w-full text-sm font-medium"> Name </label>
             <input id="name" type="text" name="name" class="w-full block border border-gray-100 bg-white outline-0 px-5 min-h-[48px] max-h-[48px] rounded-lg ring-0 focus-within:ring-4 ring-emerald-500 duration-500" required autocomplete="off" />
