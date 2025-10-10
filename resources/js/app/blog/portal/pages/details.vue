@@ -7,7 +7,7 @@
                 <RouterLink :to="{name:'blog_portal_home'}" class="inline-block decoration-0 text-white text-sm">
                     Home
                 </RouterLink>
-                <div class="w-0.5 h-6 bg-white -rotate-30"></div>
+                <div class="w-0.5 h-3.5 bg-white rotate-30"></div>
                 <RouterLink :to="{name:'blog_portal_post_details',params: {slug:1}}" class="inline-block decoration-0 text-white text-sm">
                     Post Details
                 </RouterLink>

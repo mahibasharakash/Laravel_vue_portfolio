@@ -7,7 +7,7 @@
                 <RouterLink :to="{name:'blog_portal_home'}" class="inline-block decoration-0 text-white text-sm">
                     Home
                 </RouterLink>
-                <div class="w-0.5 h-6 bg-white -rotate-30"></div>
+                <div class="w-0.5 h-3.5 bg-white rotate-30"></div>
                 <RouterLink :to="{name:'blog_user_details'}" class="inline-block decoration-0 text-white text-sm">
                     User Details
                 </RouterLink>
@@ -79,7 +79,7 @@
                 <div class="text-xl mb-2 block w-full"> Delete Account </div>
                 <div class="text-xs mb-5 block w-full max-w-[700px]"> Once your account is deleted, all of its resources and data will be permanently deleted. Before deleting your account, please download any data or information that you wish to retain. </div>
                 <div class="w-full block">
-                    <button type="submit" class="min-h-[48px] max-h-[48px] px-6 bg-red-600 duration-500 hover:bg-red-800 cursor-pointer text-xs text-white rounded-md">
+                    <button type="submit" class="min-h-[48px] max-h-[48px] px-6 bg-red-600 duration-500 hover:bg-red-800 cursor-pointer text-xs font-semibold text-white rounded-md">
                         Confirm
                     </button>
                 </div>

@@ -7,7 +7,7 @@
                 <RouterLink :to="{name:'blog_portal_home'}" class="inline-block decoration-0 text-white text-sm">
                     Home
                 </RouterLink>
-                <div class="w-0.5 h-6 bg-white -rotate-30"></div>
+                <div class="w-0.5 h-3.5 bg-white rotate-30"></div>
                 <RouterLink :to="{name:'blog_auth_login'}" class="inline-block decoration-0 text-white text-sm">
                     Sign In
                 </RouterLink>
@@ -19,7 +19,7 @@
                 <RouterLink :to="{name:'blog_portal_home'}" class="inline-block decoration-0 text-white text-sm">
                     Home
                 </RouterLink>
-                <div class="w-0.5 h-6 bg-white -rotate-30"></div>
+                <div class="w-0.5 h-3.5 bg-white rotate-30"></div>
                 <RouterLink :to="{name:'blog_auth_registration'}" class="inline-block decoration-0 text-white text-sm">
                     Sign Up
                 </RouterLink>
@@ -31,7 +31,7 @@
                 <RouterLink :to="{name:'blog_portal_home'}" class="inline-block decoration-0 text-white text-sm">
                     Home
                 </RouterLink>
-                <div class="w-0.5 h-6 bg-white -rotate-30"></div>
+                <div class="w-0.5 h-3.5 bg-white rotate-30"></div>
                 <RouterLink :to="{name:'blog_auth_forgot'}" class="inline-block decoration-0 text-white text-sm">
                     Forgot Password
                 </RouterLink>
@@ -43,7 +43,7 @@
                 <RouterLink :to="{name:'blog_portal_home'}" class="inline-block decoration-0 text-white text-sm">
                     Home
                 </RouterLink>
-                <div class="w-0.5 h-6 bg-white -rotate-30"></div>
+                <div class="w-0.5 h-3.5 bg-white rotate-30"></div>
                 <RouterLink :to="{name:'blog_auth_reset'}" class="inline-block decoration-0 text-white text-sm">
                     Reset Account
                 </RouterLink>
@@ -55,7 +55,7 @@
                 <RouterLink :to="{name:'blog_portal_home'}" class="inline-block decoration-0 text-white text-sm">
                     Home
                 </RouterLink>
-                <div class="w-0.5 h-6 bg-white -rotate-30"></div>
+                <div class="w-0.5 h-3.5 bg-white rotate-30"></div>
                 <RouterLink :to="{name:'blog_auth_verification'}" class="inline-block decoration-0 text-white text-sm">
                     Verification Account
                 </RouterLink>
