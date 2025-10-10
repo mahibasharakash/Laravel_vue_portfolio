@@ -14,12 +14,24 @@
                 <div class="py-5">
                     <div class="text-white text-xl mb-5"> Projects </div>
                     <div class="w-full block">
-                        <a href="javascript:void(0)" class="text-sm text-white/65 duration-500 hover:text-white block mb-3"> Portfolio System </a>
-                        <a href="javascript:void(0)" class="text-sm text-white/65 duration-500 hover:text-white block mb-3"> Blogs System </a>
-                        <a href="javascript:void(0)" class="text-sm text-white/65 duration-500 hover:text-white block mb-3"> Ecommerce System </a>
-                        <a href="javascript:void(0)" class="text-sm text-white/65 duration-500 hover:text-white block mb-3"> Learning Management System </a>
-                        <a href="javascript:void(0)" class="text-sm text-white/65 duration-500 hover:text-white block mb-3"> Chat Application System </a>
-                        <a href="javascript:void(0)" class="text-sm text-white/65 duration-500 hover:text-white block mb-3"> Hospital Management System </a>
+                        <RouterLink :to="{name:'portfolio_home'}" class="text-sm text-white/65 duration-500 hover:text-white block mb-3">
+                            Portfolio System
+                        </RouterLink>
+                        <RouterLink :to="{name:'blog_portal_home'}" class="text-sm text-white/65 duration-500 hover:text-white block mb-3">
+                            Blogs System
+                        </RouterLink>
+                        <RouterLink :to="{name:'ecommerce_portal_home'}" class="text-sm text-white/65 duration-500 hover:text-white block mb-3">
+                            Ecommerce System
+                        </RouterLink>
+                        <RouterLink :to="{name:'learning_management_portal_home'}" class="text-sm text-white/65 duration-500 hover:text-white block mb-3">
+                            Learning Management System
+                        </RouterLink>
+                        <RouterLink :to="{name:'chat_application_portal_home'}" class="text-sm text-white/65 duration-500 hover:text-white block mb-3">
+                            Chat Application System
+                        </RouterLink>
+                        <RouterLink :to="{name:'hospital_portal_home'}" class="text-sm text-white/65 duration-500 hover:text-white block mb-3">
+                            Hospital Management System
+                        </RouterLink>
                     </div>
                 </div>
                 <div class="py-5">

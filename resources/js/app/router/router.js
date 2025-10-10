@@ -21,6 +21,11 @@ import blog_auth_verification from "../blog/authentication/pages/verification.vu
 import blog_portal_layout from "../blog/portal/layout/layout.vue";
 import blog_portal_home from "../blog/portal/pages/home.vue";
 
+import blog_user_layout from "../blog/user/layout/layout.vue";
+import blog_user_post from "../blog/user/pages/post.vue";
+import blog_user_category from "../blog/user/pages/category.vue";
+import blog_user_details from "../blog/user/pages/details.vue";
+
 // ecommerce authentication and portal
 
 const ecommerce_title = 'Blog Template - ';
@@ -110,6 +115,14 @@ const routes = [
                     { path: 'forgot', name: 'blog_auth_forgot', component: blog_auth_forgot, meta: {title: blog_title + 'Forgot'} },
                     { path: 'reset', name: 'blog_auth_reset', component: blog_auth_reset, meta: {title: blog_title + 'Reset'} },
                     { path: 'verification', name: 'blog_auth_verification', component: blog_auth_verification, meta: {title: blog_title + 'Verification'} },
+                ]
+            },
+            {
+                path: '/user', name: 'blog_user_layout', component: blog_user_layout,
+                children: [
+                    { path: '', name: 'blog_user_post', component: blog_user_post, meta: {title: blog_title + 'User Post Module'} },
+                    { path: 'category', name: 'blog_user_category', component: blog_user_category, meta: {title: blog_title + 'User Category Module'} },
+                    { path: 'details', name: 'blog_user_details', component: blog_user_details, meta: {title: blog_title + 'User Details Module'} },
                 ]
             },
         ]

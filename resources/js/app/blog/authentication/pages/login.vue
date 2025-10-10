@@ -10,7 +10,7 @@
         <div class="w-full block mb-4">
             <div class="mb-2 w-full flex justify-between items-center">
                 <label for="password" class="inline-block w-full text-sm font-medium"> Password </label>
-                <RouterLink :to="{name:'blog_auth_forgot'}" class="decoration-0 text-red-500 text-sm font-medium min-w-[140px]">
+                <RouterLink :to="{name:'blog_auth_forgot'}" class="decoration-0 text-red-500 font-medium min-w-[119px] text-xs">
                     Forgot Password?
                 </RouterLink>
             </div>

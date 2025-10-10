@@ -3,7 +3,7 @@
     <header class="w-full font-medium top-0 start-0 end-0 sticky z-50 duration-500" :class="{ 'shadow-2xl bg-gray-200/85 backdrop-blur-xl' : isScrolled, 'shadow-none bg-gray-200/45 backdrop-blur-0' : !isScrolled }">
         <div class="px-10 max-w-7xl mx-auto w-full flex justify-between items-center duration-500" :class="{ 'min-h-[80px]' : isScrolled, 'min-h-[70px]' : !isScrolled }">
             <RouterLink :to="{name:'blog_portal_home'}" class="decoration-0 text-black text-lg">
-                E<span class="text-emerald-900 ms-1.5">Blog</span>
+                E<span class="text-emerald-700 ms-1.5">Blog</span>
             </RouterLink>
             <button type="button" class="cursor-pointer min-w-[45px] max-w-[45px] min-h-[45px] max-h-[45px] inline-flex lg:hidden justify-center items-center outline-0 border-0 bg-gray-300 hover:bg-gray-700 text-gray-900 hover:text-white duration-500 rounded-full" @click.stop="sidebarToggle()">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
@@ -18,12 +18,24 @@
                         </svg>
                     </button>
                 </div>
-                <RouterLink :to="{name:'blog_auth_login'}" :class="{ 'text-emerald-500' : $route.name === 'blog_auth_login', 'text-black' : $route.name !== 'blog_auth_login' }" class="decoration-0 text-sm duration-500 hover:text-emerald-500" @click="closeSidebar()">
+                <RouterLink :to="{name:'blog_auth_login'}" :class="{ 'text-emerald-700' : $route.name === 'blog_auth_login', 'text-black' : $route.name !== 'blog_auth_login' }" class="decoration-0 text-sm duration-500 hover:text-emerald-700" @click="closeSidebar()">
                     Login
                 </RouterLink>
-                <RouterLink :to="{name:'blog_auth_registration'}" :class="{ 'text-emerald-500' : $route.name === 'blog_auth_registration', 'text-black' : $route.name !== 'blog_auth_registration' }" class="decoration-0 text-sm duration-500 hover:text-emerald-500" @click="closeSidebar()">
+                <RouterLink :to="{name:'blog_auth_registration'}" :class="{ 'text-emerald-700' : $route.name === 'blog_auth_registration', 'text-black' : $route.name !== 'blog_auth_registration' }" class="decoration-0 text-sm duration-500 hover:text-emerald-700" @click="closeSidebar()">
                     Registration
                 </RouterLink>
+                <RouterLink :to="{name:'blog_user_post'}" :class="{ 'text-emerald-700' : $route.name === 'blog_user_post', 'text-black' : $route.name !== 'blog_user_post' }" class="decoration-0 text-sm duration-500 hover:text-emerald-700" @click="closeSidebar()">
+                    Post
+                </RouterLink>
+                <RouterLink :to="{name:'blog_user_category'}" :class="{ 'text-emerald-700' : $route.name === 'blog_user_category', 'text-black' : $route.name !== 'blog_user_category' }" class="decoration-0 text-sm duration-500 hover:text-emerald-700" @click="closeSidebar()">
+                    Category
+                </RouterLink>
+                <RouterLink :to="{name:'blog_user_details'}" :class="{ 'text-emerald-700' : $route.name === 'blog_user_details', 'text-black' : $route.name !== 'blog_user_details' }" class="decoration-0 text-sm duration-500 hover:text-emerald-700" @click="closeSidebar()">
+                    Details
+                </RouterLink>
+                <a href="javascript:void(0)" class="decoration-0 text-sm duration-500 hover:text-emerald-500">
+                    Logout
+                </a>
             </div>
         </div>
     </header>

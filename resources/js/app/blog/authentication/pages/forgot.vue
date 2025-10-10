@@ -13,7 +13,7 @@
             </button>
         </div>
         <div class="w-full text-center text-xs font-medium text-gray-600">
-            Remember your password? <RouterLink :to="{name:'blog_auth_registration'}" class="decoration-0 text-emerald-800 text-xs font-medium">Create an account</RouterLink>
+            Remember your password? <RouterLink :to="{name:'blog_auth_login'}" class="decoration-0 text-emerald-800 text-xs font-medium">SignIn</RouterLink>
         </div>
     </form>
 

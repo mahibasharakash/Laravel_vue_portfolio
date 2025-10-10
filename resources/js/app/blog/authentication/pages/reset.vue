@@ -19,10 +19,13 @@
             <label for="password_confirmation" class="block mb-2 w-full text-sm font-medium"> Password Confirmation </label>
             <input id="password_confirmation" type="password" name="password_confirmation" class="w-full block border border-gray-100 bg-white outline-0 px-5 min-h-[48px] max-h-[48px] rounded-lg ring-0 focus-within:ring-4 ring-emerald-500 duration-500" required autocomplete="off" />
         </div>
-        <div class="w-full block mb-4">
+        <div class="w-full block mb-10">
             <button type="submit" class="cursor-pointer min-w-[120px] max-w-[120px] min-h-[48px] max-h-[48px] text-sm font-medium text-white rounded-lg outline-0 bg-emerald-500 duration-500 hover:bg-emerald-800">
                 Submit
             </button>
+        </div>
+        <div class="w-full text-center text-xs font-medium text-gray-600">
+            Remember your password? <RouterLink :to="{name:'blog_auth_login'}" class="decoration-0 text-emerald-800 text-xs font-medium">SignIn</RouterLink>
         </div>
     </form>
 
