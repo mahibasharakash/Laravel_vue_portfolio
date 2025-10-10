@@ -6,7 +6,7 @@
                 <div class="w-full lg:w-2/3 px-3 py-5">
 
                     <template v-for="each in 4">
-                        <a href="javascript:void(0)" class="mb-11 block w-full bg-gray-50 rounded-md overflow-hidden group shadow-lg duration-500 hover:shadow-xl">
+                        <RouterLink :to="{name:'blog_portal_post_details',params: {slug:1}}" class="mb-11 block w-full bg-gray-50 rounded-md overflow-hidden group shadow-lg duration-500 hover:shadow-xl">
                             <div class="w-full overflow-hidden min-h-[350px] max-h-[350px]">
                                 <img :src="'/blog/laptop.jpg'" class="w-full object-cover bg-cover scale-100 duration-500 group-hover:scale-125 min-h-[350px] max-h-[350px]" alt="laptop" />
                             </div>
@@ -33,7 +33,7 @@
                                     he latest new brand laptop of 2025 is the Energizer EnergyBook Pro Ultra. It features a massive 192 Wh battery that delivers exceptional endurance, lasting up to seven days on standby. Designed for power users and professionals, it combines an 18-inch high-resolution display with a sleek, durable build. While not focused on gaming performance, it emphasizes efficiency, portability, and extended battery life—making it ideal for productivity and travel (though its battery size exceeds flight limits in some regions).
                                 </div>
                             </div>
-                        </a>
+                        </RouterLink>
                     </template>
 
                     <div class="w-full mt-7 flex justify-start items-center gap-1.5">
