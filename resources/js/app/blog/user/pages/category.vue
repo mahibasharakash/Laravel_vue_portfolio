@@ -2,7 +2,7 @@
 
     <section class="w-full bg-cover object-cover relative before:absolute before:content-[''] before:inset-0 before:w-full before:h-full before:bg-black/65 before:backdrop-blur-sm" :style="{ backgroundImage: 'url(/blog/breadcrumb.jpg)' }">
         <div class="mx-auto w-full max-w-7xl min-h-[250px] max-h-[250px] flex justify-center items-center flex-col gap-3 relative">
-            <div class="text-xl text-white"> User Category </div>
+            <div class="text-xl text-white"> User Post </div>
             <div class="inline-flex justify-center items-center gap-5">
                 <RouterLink :to="{name:'blog_portal_home'}" class="inline-block decoration-0 text-white text-sm">
                     Home
@@ -22,14 +22,16 @@
             <div class="w-full flex flex-wrap justify-between mb-10">
                 <div class=" w-full max-w-[360px]">
                     <div class="relative w-full">
-                        <input type="text" name="" placeholder="Search Here" class="w-full block border border-gray-200 bg-gray-200 placeholder-black text-sm outline-0 px-5 min-h-[48px] max-h-[48px] rounded-md ring-0 focus-within:ring-4 ring-emerald-500 duration-500" required autocomplete="off" />
-                        <div class="absolute top-0 bottom-0 start-0">
-
+                        <input type="text" name="" placeholder="Search Here" class="w-full block shadow-inner shadow-gray-400 border-0 bg-gray-50 placeholder-black text-sm outline-0 ps-12 pe-5 min-h-[48px] max-h-[48px] rounded-md ring-0 focus-within:ring-4 ring-emerald-500 duration-500" required autocomplete="off" />
+                        <div class="absolute top-0 bottom-0 start-0 flex items-center ps-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                            </svg>
                         </div>
                     </div>
                 </div>
-                <div class="">
-                    <button type="button" class="min-h-[48px] max-h-[48px] px-6 bg-green-600 duration-500 hover:bg-green-800 cursor-pointer text-sm text-white rounded-md">
+                <div>
+                    <button type="button" class="min-h-[48px] max-h-[48px] px-6 bg-green-600 duration-500 hover:bg-green-800 cursor-pointer text-sm text-white rounded-md" @click="openManageModal()">
                         New
                     </button>
                 </div>
@@ -65,23 +67,27 @@
 
                 </template>
                 <!-- data list -->
-                <div class="w-full border border-gray-200 bg-gray-100 min-h-[calc(100vh-350px)] max-h-[calc(100vh-350px)] overflow-y-auto">
+                <div class="w-full min-h-[calc(100vh-350px)] max-h-[calc(100vh-350px)] overflow-y-auto">
                     <table class="table table-auto w-full">
-                        <thead class="w-full">
-                        <tr class="w-full">
-                            <th class="max-w-[100px] min-w-[100px] text-start px-5 py-2 text-sm font-medium"> Name </th>
-                            <th class="max-w-[80px] min-w-[80px] text-start px-5 py-2 text-sm font-medium"> Action </th>
-                        </tr>
+                        <thead>
+                            <tr class="w-full block bg-gray-50">
+                                <th class="w-full max-w-[350px] min-w-[350px] text-start px-6 py-3 text-sm font-medium">
+                                    Name
+                                </th>
+                                <th class="w-full max-w-[120px] min-w-[120px] px-6 py-3 text-sm font-medium text-end">
+                                    Action
+                                </th>
+                            </tr>
                         </thead>
-                        <tbody class="w-full">
-                        <tr class="w-full" v-for="(each, index) in 10" :key="index">
-                            <td class="max-w-[100px] min-w-[100px] text-start px-5 py-2 text-xs font-medium">
+                        <tbody>
+                        <tr class="w-full mt-2 block bg-gray-50 duration-500 hover:bg-gray-100" v-for="(each, index) in 10" :key="index">
+                            <td class="w-full max-w-[350px] min-w-[350px] text-start px-6 py-3 rounded-s-xl text-xs font-medium">
                                 <div class="truncate">
-                                    Category 1
+                                    Category
                                 </div>
                             </td>
-                            <td class="max-w-[80px] min-w-[80px] text-start px-5 py-2 text-xs font-medium">
-                                <div class="flex items-center gap-2">
+                            <td class="w-full max-w-[120px] min-w-[120px] text-start px-6 py-3 rounded-e-xl text-xs font-medium">
+                                <div class="flex items-center justify-end gap-2">
                                     <a class="cursor-pointer p-0 m-0 inline-block outline-0 decoration-0 text-gray-800" @click="openManageModal()">
                                         Edit
                                     </a>
@@ -100,8 +106,13 @@
             <!-- / body -->
 
             <!-- footer -->
-            <div class="w-full mt-5">
+            <div class="w-full mt-5 flex justify-between items-center gap-3">
                 <div class="flex items-center justify-start gap-1.5">
+                    <button type="button" class="min-w-[35px] max-w-[35px] min-h-[35px] max-h-[35px] inline-flex justify-center items-center cursor-pointer bg-green-100 hover:bg-green-800 text-green-950 hover:text-white duration-500 rounded-full text-sm font-medium">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.1" stroke="currentColor" class="size-4 min-w-4 max-w-4 min-h-4 max-h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                        </svg>
+                    </button>
                     <button type="button" class="min-w-[35px] max-w-[35px] min-h-[35px] max-h-[35px] inline-flex justify-center items-center cursor-pointer bg-green-100 hover:bg-green-800 text-green-950 hover:text-white duration-500 rounded-full text-sm font-medium">
                         1
                     </button>
@@ -117,7 +128,13 @@
                     <button type="button" class="min-w-[35px] max-w-[35px] min-h-[35px] max-h-[35px] inline-flex justify-center items-center cursor-pointer bg-green-100 hover:bg-green-800 text-green-950 hover:text-white duration-500 rounded-full text-sm font-medium">
                         5
                     </button>
+                    <button type="button" class="min-w-[35px] max-w-[35px] min-h-[35px] max-h-[35px] inline-flex justify-center items-center cursor-pointer bg-green-100 hover:bg-green-800 text-green-950 hover:text-white duration-500 rounded-full text-sm font-medium">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.1" stroke="currentColor" class="size-4 min-w-4 max-w-4 min-h-4 max-h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </button>
                 </div>
+                <div class="text-xs font-medium"> 10 out of 36 as 360 </div>
             </div>
             <!-- / footer -->
 
@@ -135,7 +152,7 @@
                 <!-- header -->
                 <div class="w-full flex justify-between items-center mb-3">
                     <div class="text-xl font-semibold">
-                        Create Post
+                        Create Category
                     </div>
                     <button type="button" class="min-w-[48px] max-w-[48px] min-h-[48px] max-h-[48px] bg-transparent duration-500 hover:bg-gray-200 rounded-full inline-flex justify-center items-center cursor-pointer" @click="closeManageModal()">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -148,12 +165,12 @@
                 <!-- body -->
                 <div class="w-full block">
 
-                    <!-- title -->
+                    <!-- name -->
                     <div class="mb-3 w-full block">
-                        <label for="title" class="mb-2 w-full block text-sm font-medium"> Title </label>
-                        <input id="title" type="text" name="title" class="text-xs font-medium w-full border border-gray-100 bg-gray-100 block min-h-[48px] max-h-[48px] rounded-md outline-0 ring-0 focus-within:ring-3 ring-blue-400 duration-500 px-4 shadow-inner" autocomplete="off" />
+                        <label for="name" class="mb-2 w-full block text-sm font-medium"> Name </label>
+                        <input id="name" type="text" name="name" class="text-xs font-medium w-full border border-gray-100 bg-gray-100 block min-h-[48px] max-h-[48px] rounded-md outline-0 ring-0 focus-within:ring-3 ring-blue-400 duration-500 px-4 shadow-inner" autocomplete="off" />
                     </div>
-                    <!-- / title -->
+                    <!-- / name -->
 
                 </div>
                 <!-- / body -->

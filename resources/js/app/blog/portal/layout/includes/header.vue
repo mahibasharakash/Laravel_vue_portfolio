@@ -18,6 +18,9 @@
                         </svg>
                     </button>
                 </div>
+                <RouterLink :to="{name:'blog_portal_home'}" :class="{ 'text-emerald-700' : $route.name === 'blog_portal_home', 'text-black' : $route.name !== 'blog_portal_home' }" class="decoration-0 text-sm duration-500 hover:text-emerald-700" @click="closeSidebar()">
+                    Home
+                </RouterLink>
                 <RouterLink :to="{name:'blog_auth_login'}" :class="{ 'text-emerald-700' : $route.name === 'blog_auth_login', 'text-black' : $route.name !== 'blog_auth_login' }" class="decoration-0 text-sm duration-500 hover:text-emerald-700" @click="closeSidebar()">
                     Login
                 </RouterLink>
