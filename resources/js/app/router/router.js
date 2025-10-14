@@ -95,6 +95,9 @@ import hospital_portal_about from "../hospital/portal/pages/about.vue";
 import hospital_portal_contact from "../hospital/portal/pages/contact.vue";
 import hospital_portal_appointment from "../hospital/portal/pages/appointment.vue";
 
+import hospital_user_layout from "../hospital/user/layout/layout.vue";
+import hospital_user_details from "../hospital/user/pages/details.vue";
+
 const routes = [
 
     {
@@ -105,12 +108,11 @@ const routes = [
     },
 
     {
-        path: '/blog-template', name: 'blog_portal_layout', component: blog_portal_layout,
+        path: '/blog_template', name: 'blog_portal_layout', component: blog_portal_layout,
         children: [
             { path: '', name: 'blog_portal_home', component: blog_portal_home, meta: {title: blog_title + 'Home'} },
             { path: 'post_details/:slug', name: 'blog_portal_post_details', component: blog_portal_post_details, meta: {title: blog_title + 'Post Details'} },
-            {
-                path: '/auth', name: 'blog_auth_layout', component: blog_auth_layout,
+            { path: '/auth', name: 'blog_auth_layout', component: blog_auth_layout,
                 children: [
                     { path: 'login', name: 'blog_auth_login', component: blog_auth_login, meta: {title: blog_title + 'Login'} },
                     { path: 'registration', name: 'blog_auth_registration', component: blog_auth_registration, meta: {title: blog_title + 'Registration'} },
@@ -131,14 +133,13 @@ const routes = [
     },
 
     {
-        path: '/ecommerce-template', name: 'ecommerce_portal_layout', component: ecommerce_portal_layout,
+        path: '/ecommerce_template', name: 'ecommerce_portal_layout', component: ecommerce_portal_layout,
         children: [
             { path: '', name: 'ecommerce_portal_home', component: ecommerce_portal_home, meta: {title: ecommerce_title + 'Home'} },
             { path: 'about', name: 'ecommerce_portal_about', component: ecommerce_portal_about, meta: {title: ecommerce_title + 'About'} },
             { path: 'contact', name: 'ecommerce_portal_contact', component: ecommerce_portal_contact, meta: {title: ecommerce_title + 'Contact'} },
             { path: 'shop', name: 'ecommerce_portal_shop', component: ecommerce_portal_shop, meta: {title: ecommerce_title + 'Shop'} },
-            {
-                path: '/auth', name: 'ecommerce_auth_layout', component: ecommerce_auth_layout,
+            { path: '/auth', name: 'ecommerce_auth_layout', component: ecommerce_auth_layout,
                 children: [
                     { path: 'login', name: 'ecommerce_auth_login', component: ecommerce_auth_login, meta: {title: ecommerce_title + 'Login'} },
                     { path: 'registration', name: 'ecommerce_auth_registration', component: ecommerce_auth_registration, meta: {title: ecommerce_title + 'Registration'} },
@@ -151,14 +152,13 @@ const routes = [
     },
 
     {
-        path: '/learning-management-system-template', name: 'learning_management_portal_layout', component: learning_management_portal_layout,
+        path: '/learning_management_template', name: 'learning_management_portal_layout', component: learning_management_portal_layout,
         children: [
             { path: '', name: 'learning_management_portal_home', component: learning_management_portal_home, meta: {title: learning_management_title + 'Home'} },
             { path: 'about', name: 'learning_management_portal_about', component: learning_management_portal_about, meta: {title: learning_management_title + 'About'} },
             { path: 'contact', name: 'learning_management_portal_contact', component: learning_management_portal_contact, meta: {title: learning_management_title + 'Contact'} },
             { path: 'course', name: 'learning_management_portal_course', component: learning_management_portal_course, meta: {title: learning_management_title + 'Shop'} },
-            {
-                path: '/auth', name: 'learning_management_auth_layout', component: learning_management_auth_layout,
+            { path: '/auth', name: 'learning_management_auth_layout', component: learning_management_auth_layout,
                 children: [
                     { path: 'login', name: 'learning_management_auth_login', component: learning_management_auth_login, meta: {title: learning_management_title + 'Login'} },
                     { path: 'registration', name: 'learning_management_auth_registration', component: learning_management_auth_registration, meta: {title: learning_management_title + 'Registration'} },
@@ -171,11 +171,10 @@ const routes = [
     },
 
     {
-        path: '/chat-application-template', name: 'chat_application_portal_layout', component: chat_application_portal_layout,
+        path: '/chat_application_template', name: 'chat_application_portal_layout', component: chat_application_portal_layout,
         children: [
             { path: '', name: 'chat_application_portal_home', component: chat_application_portal_home, meta: {title: chat_application_title + 'Home'} },
-            {
-                path: '/auth', name: 'chat_application_auth_layout', component: chat_application_auth_layout,
+            { path: '/auth', name: 'chat_application_auth_layout', component: chat_application_auth_layout,
                 children: [
                     { path: 'login', name: 'chat_application_auth_login', component: chat_application_auth_login, meta: {title: chat_application_title + 'Login'} },
                     { path: 'registration', name: 'chat_application_auth_registration', component: chat_application_auth_registration, meta: {title: chat_application_title + 'Registration'} },
@@ -184,8 +183,7 @@ const routes = [
                     { path: 'verification', name: 'chat_application_auth_verification', component: chat_application_auth_verification, meta: {title: chat_application_title + 'Verification'} },
                 ]
             },
-            {
-                path: '/user', name: 'chat_application_user_layout', component: chat_application_user_layout,
+            { path: '/user', name: 'chat_application_user_layout', component: chat_application_user_layout,
                 children: [
                     { path: '', name: 'chat_application_user_chat', component: chat_application_user_chat, meta: {title: chat_application_title + 'User Chat'} },
                 ]
@@ -193,21 +191,24 @@ const routes = [
         ]
     },
 
-    {
-        path: '/hospital-template', name: 'hospital_portal_layout', component: hospital_portal_layout,
+    { path: '/hospital_template', name: 'hospital_portal_layout', component: hospital_portal_layout,
         children: [
             { path: '', name: 'hospital_portal_home', component: hospital_portal_home, meta: {title: hospital_title + 'Home'} },
             { path: 'about', name: 'hospital_portal_about', component: hospital_portal_about, meta: {title: hospital_title + 'About'} },
             { path: 'contact', name: 'hospital_portal_contact', component: hospital_portal_contact, meta: {title: hospital_title + 'Contact'} },
             { path: 'appointment', name: 'hospital_portal_appointment', component: hospital_portal_appointment, meta: {title: hospital_title + 'Appointment'} },
-            {
-                path: '/auth', name: 'hospital_auth_layout', component: hospital_auth_layout,
+            { path: '/auth', name: 'hospital_auth_layout', component: hospital_auth_layout,
                 children: [
                     { path: 'login', name: 'hospital_auth_login', component: hospital_auth_login, meta: {title: hospital_title + 'Login'} },
                     { path: 'registration', name: 'hospital_auth_registration', component: hospital_auth_registration, meta: {title: hospital_title + 'Registration'} },
                     { path: 'forgot', name: 'hospital_auth_forgot', component: hospital_auth_forgot, meta: {title: hospital_title + 'Forgot'} },
                     { path: 'reset', name: 'hospital_auth_reset', component: hospital_auth_reset, meta: {title: hospital_title + 'Reset'} },
                     { path: 'verification', name: 'hospital_auth_verification', component: hospital_auth_verification, meta: {title: hospital_title + 'Verification'} },
+                ]
+            },
+            { path: '/user', name: 'hospital_user_layout', component: hospital_user_layout,
+                children: [
+                    { path: '', name: 'hospital_user_details', component: hospital_user_details, meta: {title: hospital_title + 'Details'} },
                 ]
             },
         ]
