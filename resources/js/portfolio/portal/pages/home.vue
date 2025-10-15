@@ -446,7 +446,64 @@
                 <a href="javascript:void(0)" class="w-full relative overflow-hidden rounded-xl group">
 
                     <!-- content -->
-                    <div class="absolute flex justify-start items-end inset-0 group-hover:opacity-100 w-full h-full bg-gradient-to-t scale-125 group-hover:scale-100 from-amber-800 to-white/25 opacity-0 duration-500">
+                    <div class="absolute flex justify-start items-end inset-0 group-hover:opacity-100 w-full h-full bg-gradient-to-t scale-125 group-hover:scale-100 from-black to-white/25 opacity-0 duration-500">
+                        <div class="text-white opacity-100 p-8">
+                            <div class="text-xl mb-2"> Chief Executive Officer </div>
+                            <div class="text-sm"> Alamin </div>
+                        </div>
+                    </div>
+                    <!-- / content -->
+
+                    <!-- image -->
+                    <img :src="'/images/portfolio-img-1.webp'" alt="portfolio-img-1" class="object-cover bg-cover w-full min-h-[450px] max-h-[450px]" />
+                    <!-- / image -->
+
+                </a>
+                <!-- / portfolio column -->
+
+                <!-- portfolio column -->
+                <a href="javascript:void(0)" class="w-full relative overflow-hidden rounded-xl group">
+
+                    <!-- content -->
+                    <div class="absolute flex justify-start items-end inset-0 group-hover:opacity-100 w-full h-full bg-gradient-to-t scale-125 group-hover:scale-100 from-black to-white/25 opacity-0 duration-500">
+                        <div class="text-white opacity-100 p-8">
+                            <div class="text-xl mb-2"> Digital Marketing Manager </div>
+                            <div class="text-sm"> Emon </div>
+                        </div>
+                    </div>
+                    <!-- / content -->
+
+                    <!-- image -->
+                    <img :src="'/images/portfolio-img-2.webp'" alt="portfolio-img-2" class="object-cover bg-cover w-full min-h-[450px] max-h-[450px]" />
+                    <!-- / image -->
+
+                </a>
+                <!-- / portfolio column -->
+
+                <!-- portfolio column -->
+                <a href="javascript:void(0)" class="w-full relative overflow-hidden rounded-xl group">
+
+                    <!-- content -->
+                    <div class="absolute flex justify-start items-end inset-0 group-hover:opacity-100 w-full h-full bg-gradient-to-t scale-125 group-hover:scale-100 from-black to-white/25 opacity-0 duration-500">
+                        <div class="text-white opacity-100 p-8">
+                            <div class="text-xl mb-2"> Content Writing </div>
+                            <div class="text-sm"> Content Writing Plan </div>
+                        </div>
+                    </div>
+                    <!-- / content -->
+
+                    <!-- image -->
+                    <img :src="'/images/portfolio-img-3.webp'" alt="portfolio-img-3" class="object-cover bg-cover w-full min-h-[450px] max-h-[450px]" />
+                    <!-- / image -->
+
+                </a>
+                <!-- / portfolio column -->
+
+                <!-- portfolio column -->
+                <a href="javascript:void(0)" class="w-full relative overflow-hidden rounded-xl group">
+
+                    <!-- content -->
+                    <div class="absolute flex justify-start items-end inset-0 group-hover:opacity-100 w-full h-full bg-gradient-to-t scale-125 group-hover:scale-100 from-black to-white/25 opacity-0 duration-500">
                         <div class="text-white opacity-100 p-8">
                             <div class="text-xl mb-2"> Development </div>
                             <div class="text-sm"> Web Business Plan </div>
@@ -465,7 +522,7 @@
                 <a href="javascript:void(0)" class="w-full relative overflow-hidden rounded-xl group">
 
                     <!-- content -->
-                    <div class="absolute flex justify-start items-end inset-0 group-hover:opacity-100 w-full h-full bg-gradient-to-t scale-125 group-hover:scale-100 from-amber-800 to-white/25 opacity-0 duration-500">
+                    <div class="absolute flex justify-start items-end inset-0 group-hover:opacity-100 w-full h-full bg-gradient-to-t scale-125 group-hover:scale-100 from-black to-white/25 opacity-0 duration-500">
                         <div class="text-white opacity-100 p-8">
                             <div class="text-xl mb-2"> Web Consultancy </div>
                             <div class="text-sm"> Web Consultancy Plan </div>
@@ -484,7 +541,64 @@
                 <a href="javascript:void(0)" class="w-full relative overflow-hidden rounded-xl group">
 
                     <!-- content -->
-                    <div class="absolute flex justify-start items-end inset-0 group-hover:opacity-100 w-full h-full bg-gradient-to-t scale-125 group-hover:scale-100 from-amber-800 to-white/25 opacity-0 duration-500">
+                    <div class="absolute flex justify-start items-end inset-0 group-hover:opacity-100 w-full h-full bg-gradient-to-t scale-125 group-hover:scale-100 from-black to-white/25 opacity-0 duration-500">
+                        <div class="text-white opacity-100 p-8">
+                            <div class="text-xl mb-2"> Content Writing </div>
+                            <div class="text-sm"> Content Writing Plan </div>
+                        </div>
+                    </div>
+                    <!-- / content -->
+
+                    <!-- image -->
+                    <img :src="'/images/portfolio-img-3.webp'" alt="portfolio-img-3" class="object-cover bg-cover w-full min-h-[450px] max-h-[450px]" />
+                    <!-- / image -->
+
+                </a>
+                <!-- / portfolio column -->
+
+                <!-- portfolio column -->
+                <a href="javascript:void(0)" class="w-full relative overflow-hidden rounded-xl group">
+
+                    <!-- content -->
+                    <div class="absolute flex justify-start items-end inset-0 group-hover:opacity-100 w-full h-full bg-gradient-to-t scale-125 group-hover:scale-100 from-black to-white/25 opacity-0 duration-500">
+                        <div class="text-white opacity-100 p-8">
+                            <div class="text-xl mb-2"> Development </div>
+                            <div class="text-sm"> Web Business Plan </div>
+                        </div>
+                    </div>
+                    <!-- / content -->
+
+                    <!-- image -->
+                    <img :src="'/images/portfolio-img-1.webp'" alt="portfolio-img-1" class="object-cover bg-cover w-full min-h-[450px] max-h-[450px]" />
+                    <!-- / image -->
+
+                </a>
+                <!-- / portfolio column -->
+
+                <!-- portfolio column -->
+                <a href="javascript:void(0)" class="w-full relative overflow-hidden rounded-xl group">
+
+                    <!-- content -->
+                    <div class="absolute flex justify-start items-end inset-0 group-hover:opacity-100 w-full h-full bg-gradient-to-t scale-125 group-hover:scale-100 from-black to-white/25 opacity-0 duration-500">
+                        <div class="text-white opacity-100 p-8">
+                            <div class="text-xl mb-2"> Web Consultancy </div>
+                            <div class="text-sm"> Web Consultancy Plan </div>
+                        </div>
+                    </div>
+                    <!-- / content -->
+
+                    <!-- image -->
+                    <img :src="'/images/portfolio-img-2.webp'" alt="portfolio-img-2" class="object-cover bg-cover w-full min-h-[450px] max-h-[450px]" />
+                    <!-- / image -->
+
+                </a>
+                <!-- / portfolio column -->
+
+                <!-- portfolio column -->
+                <a href="javascript:void(0)" class="w-full relative overflow-hidden rounded-xl group">
+
+                    <!-- content -->
+                    <div class="absolute flex justify-start items-end inset-0 group-hover:opacity-100 w-full h-full bg-gradient-to-t scale-125 group-hover:scale-100 from-black to-white/25 opacity-0 duration-500">
                         <div class="text-white opacity-100 p-8">
                             <div class="text-xl mb-2"> Content Writing </div>
                             <div class="text-sm"> Content Writing Plan </div>
@@ -502,16 +616,6 @@
             </div>
 
             <!-- / portfolio -->
-
-            <div class="mt-10 flex justify-center items-center">
-
-                <!-- view all portfolio -->
-                <a href="javascript:void(0)" class="inline-block text-sm shadow-none hover:shadow-inner decoration-0 border-2 border-amber-600 text-amber-600 hover:text-white bg-transparent hover:bg-amber-600 duration-500 rounded-md px-10 py-3">
-                    View All Works
-                </a>
-                <!-- / view all portfolio -->
-
-            </div>
 
         </div>
     </section>
@@ -687,8 +791,10 @@
 
             <!-- description text -->
             <div class="mt-5 mb-10 w-full leading-8 text-md mx-auto max-w-[650px] text-center">
-                Experiences that keep your customers coming back for more information about
-                services Makes best effort
+                <div class="text-truncate-line-3">
+                    Experiences that keep your customers coming back for more information about
+                    services Makes best effort
+                </div>
             </div>
             <!-- / description text -->
 
@@ -700,52 +806,23 @@
 
                     <!-- blog image -->
                     <div class="overflow-hidden min-h-[250px] max-h-[250px]">
-                        <img :src="'/images/portfolio-img-1.webp'" class="scale-100 duration-500 group-hover:scale-125 object-cover bg-cover w-full min-h-[250px] max-h-[250px]" alt="blog" />
+                        <img :src="'/images/me.png'" class="scale-100 duration-500 group-hover:scale-125 object-cover bg-cover w-full min-h-[250px] max-h-[250px]" alt="blog" />
                     </div>
                     <!-- / blog image -->
 
-                    <!-- date and comment -->
-                    <div class="text-sm flex justify-between items-center text-gray-600 gap-5 px-5 mt-5">
-                        <div> 21 Feb 2022 </div> <div>12 Comments</div>
+                    <!-- category -->
+                    <div class="text-sm text-gray-600 px-5 mt-5">
+                        Blogs System
                     </div>
-                    <!-- / date and comment -->
+                    <!-- / category -->
 
                     <!-- title -->
                     <div class="px-5 py-2 text-md font-semibold mb-3">
-                        Getting started with business level improved
-                    </div>
-                    <!-- / title -->
-
-                    <!-- author -->
-                    <div class="flex justify-between items-center gap-5 pb-7 px-5">
-                        <div class="inline-flex justify-start items-center gap-3">
-                            <img :src="'/images/testimonial-author-1.webp'" class="min-w-[35px] max-w-[35px] min-h-[35px] max-h-[35px] object-cover bg-cover rounded-full" alt="author-name" />
-                            <span class="uppercase text-xs"> Daniyel </span>
+                        <div class="min-h-[95px]">
+                            <div class="text-truncate-line-3">
+                                Modern Blog website for read, writing, categories.
+                            </div>
                         </div>
-                    </div>
-                    <!-- author -->
-
-                </a>
-                <!-- / blog column -->
-
-                <!-- blog column -->
-                <a href="javascript:void(0)" class="w-full relative overflow-hidden rounded-lg group bg-white duration-500 shadow-none hover:shadow-xl">
-
-                    <!-- blog image -->
-                    <div class="overflow-hidden min-h-[250px] max-h-[250px]">
-                        <img :src="'/images/portfolio-img-2.webp'" class="scale-100 duration-500 group-hover:scale-125 object-cover bg-cover w-full min-h-[250px] max-h-[250px]" alt="blog" />
-                    </div>
-                    <!-- / blog image -->
-
-                    <!-- date and comment -->
-                    <div class="text-sm flex justify-between items-center text-gray-600 gap-5 px-5 mt-5">
-                        <div> 21 Feb 2022 </div> <div>12 Comments</div>
-                    </div>
-                    <!-- / date and comment -->
-
-                    <!-- title -->
-                    <div class="px-5 py-2 text-md font-semibold mb-3">
-                        Modern fluid typography used in website Clamp
                     </div>
                     <!-- / title -->
 
@@ -753,7 +830,7 @@
                     <div class="flex justify-between items-center gap-5 pb-7 px-5">
                         <div class="inline-flex justify-start items-center gap-3">
                             <img :src="'/images/testimonial-author-6.webp'" class="min-w-[35px] max-w-[35px] min-h-[35px] max-h-[35px] object-cover bg-cover rounded-full" alt="author-name" />
-                            <span class="uppercase text-xs"> Saimon </span>
+                            <span class="uppercase text-xs font-semibold"> Mahi Bashar Akash </span>
                         </div>
                     </div>
                     <!-- author -->
@@ -770,23 +847,138 @@
                     </div>
                     <!-- / blog image -->
 
-                    <!-- date and comment -->
-                    <div class="text-sm flex justify-between items-center text-gray-600 gap-5 px-5 mt-5">
-                        <div> 21 Feb 2022 </div> <div>12 Comments</div>
+                    <!-- category -->
+                    <div class="text-sm text-gray-600 px-5 mt-5">
+                        Ecommerce System
                     </div>
-                    <!-- / date and comment -->
+                    <!-- / category -->
 
                     <!-- title -->
                     <div class="px-5 py-2 text-md font-semibold mb-3">
-                        New fresh mobile device template for business
+                        <div class="min-h-[95px]">
+                            <div class="text-truncate-line-3">
+                                Modern Ecommerce for shopping with potential performance.
+                            </div>
+                        </div>
                     </div>
                     <!-- / title -->
 
                     <!-- author -->
                     <div class="flex justify-between items-center gap-5 pb-7 px-5">
                         <div class="inline-flex justify-start items-center gap-3">
-                            <img :src="'/images/testimonial-author-7.webp'" class="min-w-[35px] max-w-[35px] min-h-[35px] max-h-[35px] object-cover bg-cover rounded-full" alt="author-name" />
-                            <span class="uppercase text-xs"> Guptil </span>
+                            <img :src="'/images/me.png'" class="min-w-[35px] max-w-[35px] min-h-[35px] max-h-[35px] object-cover bg-cover rounded-full" alt="author-name" />
+                            <span class="uppercase text-xs font-semibold"> Mahi Bashar Akash </span>
+                        </div>
+                    </div>
+                    <!-- author -->
+
+                </a>
+                <!-- / blog column -->
+
+                <!-- blog column -->
+                <a href="javascript:void(0)" class="w-full relative overflow-hidden rounded-lg group bg-white duration-500 shadow-none hover:shadow-xl">
+
+                    <!-- blog image -->
+                    <div class="overflow-hidden min-h-[250px] max-h-[250px]">
+                        <img :src="'/images/portfolio-img-1.webp'" class="scale-100 duration-500 group-hover:scale-125 object-cover bg-cover w-full min-h-[250px] max-h-[250px]" alt="blog" />
+                    </div>
+                    <!-- / blog image -->
+
+                    <!-- category -->
+                    <div class="text-sm text-gray-600 px-5 mt-5">
+                        Learning Management System
+                    </div>
+                    <!-- / category -->
+
+                    <!-- title -->
+                    <div class="px-5 py-2 text-md font-semibold mb-3">
+                        <div class="min-h-[95px]">
+                            <div class="text-truncate-line-3">
+                                Provide course for training, original profession, appropriate effect with earn money affordable
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / title -->
+
+                    <!-- author -->
+                    <div class="flex justify-between items-center gap-5 pb-7 px-5">
+                        <div class="inline-flex justify-start items-center gap-3">
+                            <img :src="'/images/me.png'" class="min-w-[35px] max-w-[35px] min-h-[35px] max-h-[35px] object-cover bg-cover rounded-full" alt="author-name" />
+                            <span class="uppercase text-xs font-semibold"> Mahi Bashar Akash </span>
+                        </div>
+                    </div>
+                    <!-- author -->
+
+                </a>
+                <!-- / blog column -->
+
+                <!-- blog column -->
+                <a href="javascript:void(0)" class="w-full relative overflow-hidden rounded-lg group bg-white duration-500 shadow-none hover:shadow-xl">
+
+                    <!-- blog image -->
+                    <div class="overflow-hidden min-h-[250px] max-h-[250px]">
+                        <img :src="'/images/portfolio-img-2.webp'" class="scale-100 duration-500 group-hover:scale-125 object-cover bg-cover w-full min-h-[250px] max-h-[250px]" alt="blog" />
+                    </div>
+                    <!-- / blog image -->
+
+                    <!-- category -->
+                    <div class="text-sm text-gray-600 px-5 mt-5">
+                        Chat Application System
+                    </div>
+                    <!-- / category -->
+
+                    <!-- title -->
+                    <div class="px-5 py-2 text-md font-semibold mb-3">
+                        <div class="min-h-[95px]">
+                            <div class="text-truncate-line-3">
+                                Chatting as like messenger for searching, writing, reading conversation etc.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / title -->
+
+                    <!-- author -->
+                    <div class="flex justify-between items-center gap-5 pb-7 px-5">
+                        <div class="inline-flex justify-start items-center gap-3">
+                            <img :src="'/images/me.png'" class="min-w-[35px] max-w-[35px] min-h-[35px] max-h-[35px] object-cover bg-cover rounded-full" alt="author-name" />
+                            <span class="uppercase text-xs font-semibold"> Mahi Bashar Akash </span>
+                        </div>
+                    </div>
+                    <!-- author -->
+
+                </a>
+                <!-- / blog column -->
+
+                <!-- blog column -->
+                <a href="javascript:void(0)" class="w-full relative overflow-hidden rounded-lg group bg-white duration-500 shadow-none hover:shadow-xl">
+
+                    <!-- blog image -->
+                    <div class="overflow-hidden min-h-[250px] max-h-[250px]">
+                        <img :src="'/images/portfolio-img-3.webp'" class="scale-100 duration-500 group-hover:scale-125 object-cover bg-cover w-full min-h-[250px] max-h-[250px]" alt="blog" />
+                    </div>
+                    <!-- / blog image -->
+
+                    <!-- category -->
+                    <div class="text-sm text-gray-600 px-5 mt-5">
+                        Hospital Management System
+                    </div>
+                    <!-- / category -->
+
+                    <!-- title -->
+                    <div class="px-5 py-2 text-md font-semibold mb-3">
+                        <div class="min-h-[95px]">
+                            <div class="text-truncate-line-3">
+                                operations like patient registration, doctor scheduling, billing, inventory, lab results, and staff management.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / title -->
+
+                    <!-- author -->
+                    <div class="flex justify-between items-center gap-5 pb-7 px-5">
+                        <div class="inline-flex justify-start items-center gap-3">
+                            <img :src="'/images/me.png'" class="min-w-[35px] max-w-[35px] min-h-[35px] max-h-[35px] object-cover bg-cover rounded-full" alt="author-name" />
+                            <span class="uppercase text-xs font-semibold"> Mahi Bashar Akash </span>
                         </div>
                     </div>
                     <!-- author -->
@@ -797,15 +989,6 @@
             </div>
             <!-- / blogs -->
 
-            <div class="mt-10 flex justify-center items-center">
-
-                <!-- link -->
-                <a href="javascript:void(0)" class="inline-block text-sm shadow-none hover:shadow-inner decoration-0 border-2 border-amber-600 text-amber-600 hover:text-white bg-transparent hover:bg-amber-600 duration-500 rounded-md px-10 py-3">
-                    View All Blogs
-                </a>
-                <!-- / link -->
-
-            </div>
         </div>
     </section>
     <!-- / creative blog section -->
@@ -864,10 +1047,10 @@ export default {
             designers: 0,
             awards: 0,
             target: {
-                clients: 50,
-                projects: 80,
-                designers: 30,
-                awards: 30
+                clients: 1200,
+                projects: 1025,
+                designers: 765,
+                awards: 1001
             },
             isContentText: 2,
         }
