@@ -1,7 +1,5 @@
 import {createRouter, createWebHistory} from "vue-router";
 
-// learning management authentication and portal
-
 const learning_management_title = 'Learning Management Template - ';
 
 import learning_management_auth_layout from "../../learning-management/authentication/layout/layout.vue";

@@ -4,7 +4,7 @@
     "name": "vue-router"
   },
   "resources/css/app.css": {
-    "file": "assets/app-o4aGYieh.css",
+    "file": "assets/app-DIu1peyY.css",
     "src": "resources/css/app.css",
     "isEntry": true,
     "names": [
@@ -12,7 +12,7 @@
     ]
   },
   "resources/js/blog/app.js": {
-    "file": "assets/app-C1L9Frj6.js",
+    "file": "assets/app-B3qZ_qpE.js",
     "name": "app",
     "src": "resources/js/blog/app.js",
     "isEntry": true,
@@ -21,7 +21,7 @@
     ]
   },
   "resources/js/chat-application/app.js": {
-    "file": "assets/app-BO7BOqEZ.js",
+    "file": "assets/app-lanBZhKT.js",
     "name": "app",
     "src": "resources/js/chat-application/app.js",
     "isEntry": true,
@@ -30,7 +30,7 @@
     ]
   },
   "resources/js/ecommerce/app.js": {
-    "file": "assets/app-DhZ7G75-.js",
+    "file": "assets/app-C8kDw5Vy.js",
     "name": "app",
     "src": "resources/js/ecommerce/app.js",
     "isEntry": true,
@@ -39,7 +39,7 @@
     ]
   },
   "resources/js/hospital/app.js": {
-    "file": "assets/app-C9Xh5WZ4.js",
+    "file": "assets/app-yCcboL8Z.js",
     "name": "app",
     "src": "resources/js/hospital/app.js",
     "isEntry": true,
@@ -48,7 +48,7 @@
     ]
   },
   "resources/js/learning-management/app.js": {
-    "file": "assets/app-Cj7A7g-B.js",
+    "file": "assets/app-BDo1ulf_.js",
     "name": "app",
     "src": "resources/js/learning-management/app.js",
     "isEntry": true,
@@ -57,7 +57,7 @@
     ]
   },
   "resources/js/portfolio/app.js": {
-    "file": "assets/app-BedFqZP0.js",
+    "file": "assets/app-DhO9qMfz.js",
     "name": "app",
     "src": "resources/js/portfolio/app.js",
     "isEntry": true,

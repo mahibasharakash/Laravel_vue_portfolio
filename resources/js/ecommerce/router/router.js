@@ -1,7 +1,5 @@
 import {createRouter, createWebHistory} from "vue-router";
 
-// ecommerce authentication and portal
-
 const ecommerce_title = 'Blog Template - ';
 
 import ecommerce_auth_layout from "../../ecommerce/authentication/layout/layout.vue";
@@ -16,6 +14,9 @@ import ecommerce_portal_home from "../../ecommerce/portal/pages/home.vue";
 import ecommerce_portal_about from "../../ecommerce/portal/pages/about.vue";
 import ecommerce_portal_contact from "../../ecommerce/portal/pages/contact.vue";
 import ecommerce_portal_shop from "../../ecommerce/portal/pages/shop.vue";
+
+import ecommerce_user_layout from "../../ecommerce/user/layout/layout.vue";
+import ecommerce_user_details from "../../ecommerce/user/pages/details.vue";
 
 const routes = [
 
@@ -32,6 +33,11 @@ const routes = [
                     { path: 'forgot', name: 'ecommerce_auth_forgot', component: ecommerce_auth_forgot, meta: {title: ecommerce_title + 'Forgot'} },
                     { path: 'reset', name: 'ecommerce_auth_reset', component: ecommerce_auth_reset, meta: {title: ecommerce_title + 'Reset'} },
                     { path: 'verification', name: 'ecommerce_auth_verification', component: ecommerce_auth_verification, meta: {title: ecommerce_title + 'Verification'} },
+                ]
+            },
+            { path: 'user', name: 'ecommerce_user_layout', component: ecommerce_user_layout,
+                children: [
+                    { path: '', name: 'ecommerce_user_details', component: ecommerce_user_details, meta: {title: ecommerce_title + 'Details'} },
                 ]
             },
         ]

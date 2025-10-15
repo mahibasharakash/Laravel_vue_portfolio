@@ -1,7 +1,5 @@
 import {createRouter, createWebHistory} from "vue-router";
 
-// chat application authentication and portal
-
 const chat_application_title = 'Chat Application Template - ';
 
 import chat_application_auth_layout from "../../chat-application/authentication/layout/layout.vue";

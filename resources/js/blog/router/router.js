@@ -1,7 +1,5 @@
 import {createRouter, createWebHistory} from "vue-router";
 
-// blog authentication and portal
-
 const blog_title = 'Blog Template - ';
 
 import blog_auth_layout from "../authentication/layout/layout.vue";

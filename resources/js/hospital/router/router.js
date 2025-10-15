@@ -1,7 +1,5 @@
 import {createRouter, createWebHistory} from "vue-router";
 
-// hospital authentication and portal
-
 const hospital_title = 'Hospital Template - ';
 
 import hospital_auth_layout from "../../hospital/authentication/layout/layout.vue";

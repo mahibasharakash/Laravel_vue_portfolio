@@ -1,7 +1,5 @@
 import {createRouter, createWebHistory} from "vue-router";
 
-// Portfolio portal
-
 const portfolio_title = 'Portfolio Template - ';
 
 import portfolio_portal_layout from "../../portfolio/portal/layout/layout.vue";
