@@ -1,13 +1,68 @@
 {
-  "resources/css/app.css": {
-    "file": "assets/app-CzGBK6ai.css",
-    "src": "resources/css/app.css",
-    "isEntry": true
+  "_vue-router-ehVa7O-Q.js": {
+    "file": "assets/vue-router-ehVa7O-Q.js",
+    "name": "vue-router"
   },
-  "resources/js/app.js": {
-    "file": "assets/app-BFXAKr-7.js",
+  "resources/css/app.css": {
+    "file": "assets/app-o4aGYieh.css",
+    "src": "resources/css/app.css",
+    "isEntry": true,
+    "names": [
+      "app.css"
+    ]
+  },
+  "resources/js/blog/app.js": {
+    "file": "assets/app-C1L9Frj6.js",
     "name": "app",
-    "src": "resources/js/app.js",
-    "isEntry": true
+    "src": "resources/js/blog/app.js",
+    "isEntry": true,
+    "imports": [
+      "_vue-router-ehVa7O-Q.js"
+    ]
+  },
+  "resources/js/chat-application/app.js": {
+    "file": "assets/app-BO7BOqEZ.js",
+    "name": "app",
+    "src": "resources/js/chat-application/app.js",
+    "isEntry": true,
+    "imports": [
+      "_vue-router-ehVa7O-Q.js"
+    ]
+  },
+  "resources/js/ecommerce/app.js": {
+    "file": "assets/app-DhZ7G75-.js",
+    "name": "app",
+    "src": "resources/js/ecommerce/app.js",
+    "isEntry": true,
+    "imports": [
+      "_vue-router-ehVa7O-Q.js"
+    ]
+  },
+  "resources/js/hospital/app.js": {
+    "file": "assets/app-C9Xh5WZ4.js",
+    "name": "app",
+    "src": "resources/js/hospital/app.js",
+    "isEntry": true,
+    "imports": [
+      "_vue-router-ehVa7O-Q.js"
+    ]
+  },
+  "resources/js/learning-management/app.js": {
+    "file": "assets/app-Cj7A7g-B.js",
+    "name": "app",
+    "src": "resources/js/learning-management/app.js",
+    "isEntry": true,
+    "imports": [
+      "_vue-router-ehVa7O-Q.js"
+    ]
+  },
+  "resources/js/portfolio/app.js": {
+    "file": "assets/app-BedFqZP0.js",
+    "name": "app",
+    "src": "resources/js/portfolio/app.js",
+    "isEntry": true,
+    "imports": [
+      "_vue-router-ehVa7O-Q.js"
+    ]
   }
 }
