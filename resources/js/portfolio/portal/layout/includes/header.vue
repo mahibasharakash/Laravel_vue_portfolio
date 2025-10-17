@@ -1,7 +1,7 @@
 <template>
 
-    <header class="w-full font-medium top-0 start-0 end-0 fixed z-50 duration-500" :class="{ 'shadow-2xl bg-gray-900/85 backdrop-blur-xl' : isScrolled, 'shadow-none bg-transparent backdrop-blur-0' : !isScrolled }">
-        <div class="px-10 max-w-7xl mx-auto w-full flex justify-between items-center duration-500" :class="{ 'min-h-[80px]' : isScrolled, 'min-h-[70px]' : !isScrolled }">
+    <header class="w-full font-medium top-0 start-0 end-0 fixed z-50 duration-500" :class="{ 'shadow-2xl bg-black/70 backdrop-blur-xl' : isScrolled, 'shadow-none bg-transparent backdrop-blur-0' : !isScrolled }">
+        <div class="px-5 max-w-7xl mx-auto w-full flex justify-between items-center duration-500" :class="{ 'min-h-[80px]' : isScrolled, 'min-h-[70px]' : !isScrolled }">
             <RouterLink :to="{name:'portfolio_home'}" class="decoration-0 text-white text-lg">
                 Akash Technologies
             </RouterLink>
@@ -24,20 +24,17 @@
                 <button type="button" :class="[currentSection === 'about_us' ? 'text-amber-500' : 'text-black lg:text-white hover:text-amber-500']" class="cursor-pointer inline-block outline-0 bg-transparent decoration-0 text-sm duration-500 hover:text-amber-500" @click="closeSidebar();scrollToSection('about_us')">
                     About Us
                 </button>
-                <button type="button" :class="[currentSection === 'service' ? 'text-amber-500' : 'text-black lg:text-white hover:text-amber-500']" class="cursor-pointer inline-block outline-0 bg-transparent decoration-0 text-sm duration-500 hover:text-amber-500" @click="closeSidebar();scrollToSection('service')">
+                <button type="button" :class="[currentSection === 'services' ? 'text-amber-500' : 'text-black lg:text-white hover:text-amber-500']" class="cursor-pointer inline-block outline-0 bg-transparent decoration-0 text-sm duration-500 hover:text-amber-500" @click="closeSidebar();scrollToSection('services')">
                     Services
                 </button>
                 <button type="button" :class="[currentSection === 'why_choose_us' ? 'text-amber-500' : 'text-black lg:text-white hover:text-amber-500']" class="cursor-pointer inline-block outline-0 bg-transparent decoration-0 text-sm duration-500 hover:text-amber-500" @click="closeSidebar();scrollToSection('why_choose_us')">
                     Why Choose Us
                 </button>
-                <button type="button" :class="[currentSection === 'portfolio' ? 'text-amber-500' : 'text-black lg:text-white hover:text-amber-500']" class="cursor-pointer inline-block outline-0 bg-transparent decoration-0 text-sm duration-500 hover:text-amber-500" @click="closeSidebar();scrollToSection('portfolio')">
-                    Portfolio
+                <button type="button" :class="[currentSection === 'team' ? 'text-amber-500' : 'text-black lg:text-white hover:text-amber-500']" class="cursor-pointer inline-block outline-0 bg-transparent decoration-0 text-sm duration-500 hover:text-amber-500" @click="closeSidebar();scrollToSection('team')">
+                    Our Team
                 </button>
                 <button type="button" :class="[currentSection === 'testimonial' ? 'text-amber-500' : 'text-black lg:text-white hover:text-amber-500']" class="cursor-pointer inline-block outline-0 bg-transparent decoration-0 text-sm duration-500 hover:text-amber-500" @click="closeSidebar();scrollToSection('testimonial')">
                     Testimonial
-                </button>
-                <button type="button" :class="[currentSection === 'blog' ? 'text-amber-500' : 'text-black lg:text-white hover:text-amber-500']" class="cursor-pointer inline-block outline-0 bg-transparent decoration-0 text-sm duration-500 hover:text-amber-500" @click="closeSidebar();scrollToSection('blog')">
-                    Recent Updates
                 </button>
             </div>
         </div>

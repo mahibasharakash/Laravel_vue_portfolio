@@ -8,25 +8,20 @@
         <!-- / slider -->
 
         <!-- content -->
-        <div class="w-full px-10 h-full absolute inset-0 flex justify-center items-center flex-col bg-black/75 z-5">
+        <div class="w-full px-5 h-full absolute inset-0 flex justify-center items-center flex-col bg-black/75 z-5">
 
             <!-- title -->
-            <div class="text-white text-6xl max-w-[600px] leading-[75px] text-center">
-                Modern <span class="text-amber-500"> Website </span> Building
+            <div class="text-white text-2xl lg:text-4xl max-w-[500px] leading-[50px] text-center">
+                Digital <span class="text-amber-500"> Marketing </span> Agency
             </div>
             <!-- / title -->
 
             <!-- description -->
-            <div class="text-lg text-center text-white max-w-[500px] my-5">
-                Explore our digital business agency having a latest update and new product
+            <div class="text-md text-center text-white max-w-[850px] leading-[35px] mt-5">
+                Welcome to Jonopod It Office, a results-driven digital marketing agency specializing in SEO, social media, content marketing, and paid ads. We help brands grow their online presence, reach the right audience, and achieve measurable success.
             </div>
             <!-- / description -->
 
-            <!-- link -->
-            <a :href="'pdf/resume.pdf'" target="_blank" class="inline-block text-sm shadow-none hover:shadow-inner decoration-0 text-white bg-amber-600 duration-500 hover:bg-amber-700 rounded-md px-10 py-3">
-                Download CV
-            </a>
-            <!-- / link -->
         </div>
         <!-- content -->
 
@@ -35,7 +30,7 @@
 
     <!-- about section -->
     <section id="about_us" class="w-full bg-white">
-        <div class="px-10 max-w-7xl mx-auto w-full flex flex-wrap items-center">
+        <div class="px-5 max-w-7xl mx-auto w-full flex flex-wrap items-center">
             <div class="w-full lg:w-3/6 py-16 flex justify-center">
 
                 <!-- image -->
@@ -58,22 +53,16 @@
                 <!-- / breadcrumb text -->
 
                 <!-- title -->
-                <div class="text-4xl font-semibold mt-5 leading-12">
-                    We make creative plane for agency solution
+                <div class="text-2xl lg:text-4xl font-semibold mt-5 leading-12">
+                    We make Growth plane for Digital Marketing
                 </div>
                 <!-- / title -->
 
                 <!-- description text -->
                 <div class="my-5 w-full leading-8 text-md">
-                    Always recognize that your blog's primary purpose is marketing and driving new traffic to buy from you. While you do want to inform, and in some cases entertain agency. Spark creativity and craft beautiful store experiences with design tools that you want.
+                    We create smart digital marketing growth plans that help businesses boost visibility, attract the right audience, and achieve long-term success online.
                 </div>
                 <!-- / description text -->
-
-                <!-- link -->
-                <a href="javascript:void(0)" class="inline-block text-sm shadow-none hover:shadow-inner decoration-0 text-white bg-amber-600 duration-500 hover:bg-amber-700 rounded-md px-10 py-3">
-                    Know More
-                </a>
-                <!-- / link -->
 
             </div>
         </div>
@@ -82,48 +71,48 @@
 
     <!-- count section -->
     <section class="w-full bg-white">
-        <div class="px-10 max-w-7xl mx-auto w-full flex flex-wrap items-center text-center" ref="countSection">
+        <div class="px-5 max-w-7xl mx-auto w-full flex flex-wrap items-center text-center" ref="countSection">
             <div class="w-full sm:w-1/2 md:w-1/2 xl:w-1/4 py-10">
 
                 <!-- count number -->
-                <div class="text-4xl mb-3"> {{ clients }} </div>
+                <div class="text-2xl lg:text-4xl mb-3"> {{ clients }} </div>
                 <!-- / count number -->
 
                 <!-- count text -->
-                <div class="font-medium text-gray-600"> Global Happy Clients </div>
+                <div class="font-medium text-gray-600 text-xs"> Happy Clients Worldwide </div>
                 <!-- / count text -->
 
             </div>
             <div class="w-full sm:w-1/2 md:w-1/2 xl:w-1/4 py-10">
 
                 <!-- count number -->
-                <div class="text-4xl mb-3"> {{ projects }} </div>
+                <div class="text-2xl lg:text-4xl mb-3"> {{ projects }} </div>
                 <!-- / count number -->
 
                 <!-- count text -->
-                <div class="font-medium text-gray-600"> Project Completed </div>
+                <div class="font-medium text-gray-600 text-xs"> Projects Completed </div>
                 <!-- / count text -->
 
             </div>
             <div class="w-full sm:w-1/2 md:w-1/2 xl:w-1/4 py-10">
 
                 <!-- count number -->
-                <div class="text-4xl mb-3"> {{ designers }} </div>
+                <div class="text-2xl lg:text-4xl mb-3"> {{ designers }} </div>
                 <!-- / count number -->
 
                 <!-- count text -->
-                <div class="font-medium text-gray-600"> Creative Designers </div>
+                <div class="font-medium text-gray-600 text-xs"> Creative Experts </div>
                 <!-- / count text -->
 
             </div>
             <div class="w-full sm:w-1/2 md:w-1/2 xl:w-1/4 py-10">
 
                 <!-- count number -->
-                <div class="text-4xl mb-3"> {{ awards }} </div>
+                <div class="text-2xl lg:text-4xl mb-3"> {{ awards }} </div>
                 <!-- / count number -->
 
                 <!-- count text -->
-                <div class="font-medium text-gray-600"> Awards Winner </div>
+                <div class="font-medium text-gray-600 text-xs"> Awards Won </div>
                 <!-- / count text -->
 
             </div>
@@ -131,26 +120,26 @@
     </section>
     <!-- / count section -->
 
-    <!-- creative section -->
-    <section id="service" class="w-full bg-gray-100">
-        <div class="px-10 max-w-7xl mx-auto w-full py-16">
+    <!-- services section -->
+    <section id="services" class="w-full bg-gray-100">
+        <div class="px-5 max-w-7xl mx-auto w-full py-16">
 
             <!-- breadcrumb text -->
             <div class="flex justify-center items-center font-medium">
                 <div class="min-w-[35px] min-h-[3px] bg-amber-500"></div>
-                <div class="ms-3 text-amber-600"> Creative Service </div>
+                <div class="ms-3 text-amber-600"> Our Solutions </div>
             </div>
             <!-- / breadcrumb text -->
 
             <!-- title -->
-            <div class="text-center mt-5 text-4xl font-semibold">
+            <div class="text-center mt-5 text-2xl lg:text-4xl font-semibold">
                 Solution we offer you
             </div>
             <!-- / title -->
 
             <!-- description text -->
             <div class="my-5 w-full leading-8 text-md mx-auto max-w-[650px] text-center">
-                Experiences that keep your customers coming back for more information about services Makes best effort
+                We craft experiences that keep your customers engaged and coming back. Our creative strategies make every interaction count.
             </div>
             <!-- / description text -->
 
@@ -172,7 +161,7 @@
                     <!-- / title -->
 
                     <!-- description text -->
-                    <div class="text-sm leading-6 text-gray-600"> Experiences that keep your customers coming back for more information about services Makes best effort </div>
+                    <div class="text-sm leading-6 text-gray-600"> Expert guidance to optimize your business growth and digital presence, ensuring measurable results. </div>
                     <!-- / description text -->
 
                 </div>
@@ -194,7 +183,7 @@
                     <!-- / title -->
 
                     <!-- description text -->
-                    <div class="text-sm leading-6 text-gray-600"> Reach new audiences with omnichannel commerce anywhere in the world and surpass industry </div>
+                    <div class="text-sm leading-6 text-gray-600"> Build scalable websites that reach audiences worldwide, offering seamless omnichannel experiences. </div>
                     <!-- / description text -->
 
                 </div>
@@ -216,7 +205,7 @@
                     <!-- / title -->
 
                     <!-- description text -->
-                    <div class="text-sm leading-6 text-gray-600"> Use drag-and-drop functionality, custom product recommendations and headless customize your website. </div>
+                    <div class="text-sm leading-6 text-gray-600"> Engaging content tailored to your audience, using best practices to boost visibility and conversions. </div>
                     <!-- / description text -->
 
                 </div>
@@ -238,7 +227,7 @@
                     <!-- / title -->
 
                     <!-- description text -->
-                    <div class="text-sm leading-6 text-gray-600"> Faceted search built off of Elasticsearch, including custom field support for refined searchable partner. </div>
+                    <div class="text-sm leading-6 text-gray-600"> Eye-catching designs that reflect your brand identity, from visuals to UX/UI, making your brand unforgettable. </div>
                     <!-- / description text -->
 
                 </div>
@@ -260,7 +249,7 @@
                     <!-- / title -->
 
                     <!-- description text -->
-                    <div class="text-sm leading-6 text-gray-600"> SEO where your customers are shopping by integrating with top marketplaces such as business ranking. </div>
+                    <div class="text-sm leading-6 text-gray-600"> Optimize your online presence to rank higher on search engines and attract the right customers. </div>
                     <!-- / description text -->
 
                 </div>
@@ -282,7 +271,7 @@
                     <!-- / title -->
 
                     <!-- description text -->
-                    <div class="text-sm leading-6 text-gray-600"> Make it easier for your customers to pay with a broad spectrum of flexible payment methods and credit authorization. </div>
+                    <div class="text-sm leading-6 text-gray-600"> Comprehensive marketing strategies across channels, including social media, email, and paid campaigns, to grow your business. </div>
                     <!-- / description text -->
 
                 </div>
@@ -291,11 +280,11 @@
             </div>
         </div>
     </section>
-    <!-- / creative section -->
+    <!-- / services section -->
 
     <!-- why choose us section -->
     <section id="why_choose_us" class="w-full bg-white">
-        <div class="px-10 max-w-7xl mx-auto w-full py-16 flex flex-wrap">
+        <div class="px-5 max-w-7xl mx-auto w-full py-16 flex flex-wrap">
             <div class="w-full lg:w-1/2">
 
                 <!-- breadcrumb text -->
@@ -306,8 +295,8 @@
                 <!-- / breadcrumb text -->
 
                 <!-- title -->
-                <div class="my-5 text-4xl font-semibold">
-                    We ensure the best solution for you
+                <div class="my-5 text-2xl lg:text-4xl font-semibold">
+                    We deliver results-driven solutions tailored to your business growth.
                 </div>
                 <!-- / title -->
 
@@ -328,7 +317,7 @@
                         <!-- / title -->
 
                         <!-- description -->
-                        <div class="text-sm mb-2 leading-6 text-gray-600"> Simple, clean, and easy-to-use interface for everyone. </div>
+                        <div class="text-sm mb-2 leading-6 text-gray-600"> Our strategies and platforms are simple, intuitive, and easy for your audience to engage with. </div>
                         <!-- / description -->
 
                     </div>
@@ -351,7 +340,7 @@
                         <!-- / title -->
 
                         <!-- description -->
-                        <div class="text-sm mb-2 leading-6 text-gray-600"> Reliable protection with top-notch security measures. </div>
+                        <div class="text-sm mb-2 leading-6 text-gray-600"> We handle your brand and data with the highest level of security and reliability. </div>
                         <!-- / description -->
 
                     </div>
@@ -375,7 +364,7 @@
                         <!-- / title -->
 
                         <!-- description -->
-                        <div class="text-sm mb-2 leading-6 text-gray-600"> Instant assistance anytime, anywhere. </div>
+                        <div class="text-sm mb-2 leading-6 text-gray-600"> Our team is always ready to assist you—anytime, anywhere, to keep your campaigns running smoothly. </div>
                         <!-- / description -->
 
                     </div>
@@ -388,14 +377,14 @@
 
                     <!-- choose 2 image -->
                     <div class="flex justify-center items-center">
-                        <img :src="'/images/choose-1.webp'" class="object-cover bg-cover max-w-[260px] w-full h-auto p-2" alt="choose-1" />
-                        <img :src="'/images/choose-2.webp'" class="object-cover bg-cover max-w-[260px] w-full h-auto p-2" alt="choose-2" />
+                        <img :src="'/images/choose-1.webp'" class="object-cover bg-cover max-w-[180px] sm:max-w-[260px] w-full h-auto p-2" alt="choose-1" />
+                        <img :src="'/images/choose-2.webp'" class="object-cover bg-cover max-w-[180px] sm:max-w-[260px] w-full h-auto p-2" alt="choose-2" />
                     </div>
                     <!-- / choose 2 image -->
 
                     <!-- choose 1 image -->
                     <div class="flex justify-center items-center">
-                        <img :src="'/images/choose-3.webp'" class="object-cover bg-cover max-w-[260px] w-full h-auto p-2" alt="choose-1" />
+                        <img :src="'/images/choose-3.webp'" class="object-cover bg-cover max-w-[180px] sm:max-w-[260px] w-full h-auto p-2" alt="choose-1" />
                     </div>
                     <!-- choose 1 image -->
 
@@ -416,26 +405,25 @@
     <!-- / why choose us section -->
 
     <!-- creative portfolio section -->
-    <section id="portfolio" class="w-full bg-gray-100">
-        <div class="px-10 max-w-7xl mx-auto w-full py-16">
+    <section id="team" class="w-full bg-gray-100">
+        <div class="px-5 max-w-7xl mx-auto w-full py-16">
 
             <!-- breadcrumb text -->
             <div class="flex justify-center items-center font-medium">
                 <div class="min-w-[35px] min-h-[3px] bg-amber-500"></div>
-                <div class="ms-3 text-amber-600"> Creative Portfolio </div>
+                <div class="ms-3 text-amber-600"> Our Team </div>
             </div>
             <!-- / breadcrumb text -->
 
             <!-- title -->
-            <div class="my-5 text-4xl font-semibold text-center">
+            <div class="my-5 text-2xl lg:text-4xl font-semibold text-center">
                 Solution we offer you
             </div>
             <!-- / title -->
 
             <!-- description text -->
-            <div class="mt-5 mb-10 w-full leading-8 text-md mx-auto max-w-[650px] text-center">
-                Experiences that keep your customers coming back for more information about
-                services Makes best effort
+            <div class="mt-5 mb-10 w-full leading-8 text-md mx-auto max-w-[750px] text-center">
+                Meet our passionate team of digital experts, designers, and marketers dedicated to growing your brand and driving results that matter.
             </div>
             <!-- / description text -->
 
@@ -623,7 +611,7 @@
 
     <!-- testimonial section -->
     <section id="testimonial" class="w-full bg-white">
-        <div class="px-10 max-w-7xl mx-auto w-full py-16">
+        <div class="px-5 max-w-7xl mx-auto w-full py-16">
             <div class="w-full">
 
                 <div class="overflow-hidden min-h-[370px] max-h-[370px] relative">
@@ -647,7 +635,7 @@
 
                             <!-- description text -->
                             <div class="text-md mb-4 text-center mx-auto max-w-[700px] text-gray-600">
-                                Build content-rich and secure customer experiences with Drupal on the front-end and BigCommerce on the back-end. Our module is easy to manage and designed to meet whatever commerce needs your business has.
+                                Working with Jonopod It Office has been a game-changer for our business. Our online traffic doubled in just three months, and their team made the whole process so smooth and stress-free!
                             </div>
                             <!-- / description text -->
 
@@ -686,7 +674,7 @@
 
                             <!-- description text -->
                             <div class="text-md mb-4 text-center mx-auto max-w-[700px] text-gray-600">
-                                Build content-rich and secure customer experiences with Drupal on the front-end and BigCommerce on the back-end. Our module is easy to manage and designed to meet whatever commerce needs your business has.
+                                The creativity and strategy Jonopod It Office brought to our campaigns were next level. Their insights and hands-on approach helped us reach our target audience like never before.
                             </div>
                             <!-- / description text -->
 
@@ -725,7 +713,7 @@
 
                             <!-- description text -->
                             <div class="text-md mb-4 text-center mx-auto max-w-[700px] text-gray-600">
-                                Build content-rich and secure customer experiences with Drupal on the front-end and BigCommerce on the back-end. Our module is easy to manage and designed to meet whatever commerce needs your business has.
+                                We’ve tried multiple agencies before, but none matched the professionalism and results of Jonopod It Office. Their SEO and social media strategies truly boosted our growth.
                             </div>
                             <!-- / description text -->
 
@@ -771,269 +759,6 @@
         </div>
     </section>
     <!-- / testimonial section -->
-
-    <!-- creative blog section -->
-    <section id="blog" class="w-full bg-gray-100">
-        <div class="px-10 max-w-7xl mx-auto w-full py-16">
-
-            <!-- breadcrumb text -->
-            <div class="flex justify-center items-center font-medium">
-                <div class="min-w-[35px] min-h-[3px] bg-amber-500"></div>
-                <div class="ms-3 text-amber-600"> Creative Blog </div>
-            </div>
-            <!-- / breadcrumb text -->
-
-            <!-- title -->
-            <div class="my-5 text-4xl font-semibold text-center">
-                News insight
-            </div>
-            <!-- / title -->
-
-            <!-- description text -->
-            <div class="mt-5 mb-10 w-full leading-8 text-md mx-auto max-w-[650px] text-center">
-                <div class="text-truncate-line-3">
-                    Experiences that keep your customers coming back for more information about
-                    services Makes best effort
-                </div>
-            </div>
-            <!-- / description text -->
-
-            <!-- blogs -->
-            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
-
-                <!-- blog column -->
-                <a href="javascript:void(0)" class="w-full relative overflow-hidden rounded-lg group bg-white duration-500 shadow-none hover:shadow-xl">
-
-                    <!-- blog image -->
-                    <div class="overflow-hidden min-h-[250px] max-h-[250px]">
-                        <img :src="'/images/me.png'" class="scale-100 duration-500 group-hover:scale-125 object-cover bg-cover w-full min-h-[250px] max-h-[250px]" alt="blog" />
-                    </div>
-                    <!-- / blog image -->
-
-                    <!-- category -->
-                    <div class="text-sm text-gray-600 px-5 mt-5">
-                        Blogs System
-                    </div>
-                    <!-- / category -->
-
-                    <!-- title -->
-                    <div class="px-5 py-2 text-md font-semibold mb-3">
-                        <div class="min-h-[95px]">
-                            <div class="text-truncate-line-3">
-                                Modern Blog website for read, writing, categories.
-                            </div>
-                        </div>
-                    </div>
-                    <!-- / title -->
-
-                    <!-- author -->
-                    <div class="flex justify-between items-center gap-5 pb-7 px-5">
-                        <div class="inline-flex justify-start items-center gap-3">
-                            <img :src="'/images/testimonial-author-6.webp'" class="min-w-[35px] max-w-[35px] min-h-[35px] max-h-[35px] object-cover bg-cover rounded-full" alt="author-name" />
-                            <span class="uppercase text-xs font-semibold"> Mahi Bashar Akash </span>
-                        </div>
-                    </div>
-                    <!-- author -->
-
-                </a>
-                <!-- / blog column -->
-
-                <!-- blog column -->
-                <a href="javascript:void(0)" class="w-full relative overflow-hidden rounded-lg group bg-white duration-500 shadow-none hover:shadow-xl">
-
-                    <!-- blog image -->
-                    <div class="overflow-hidden min-h-[250px] max-h-[250px]">
-                        <img :src="'/images/portfolio-img-3.webp'" class="scale-100 duration-500 group-hover:scale-125 object-cover bg-cover w-full min-h-[250px] max-h-[250px]" alt="blog" />
-                    </div>
-                    <!-- / blog image -->
-
-                    <!-- category -->
-                    <div class="text-sm text-gray-600 px-5 mt-5">
-                        Ecommerce System
-                    </div>
-                    <!-- / category -->
-
-                    <!-- title -->
-                    <div class="px-5 py-2 text-md font-semibold mb-3">
-                        <div class="min-h-[95px]">
-                            <div class="text-truncate-line-3">
-                                Modern Ecommerce for shopping with potential performance.
-                            </div>
-                        </div>
-                    </div>
-                    <!-- / title -->
-
-                    <!-- author -->
-                    <div class="flex justify-between items-center gap-5 pb-7 px-5">
-                        <div class="inline-flex justify-start items-center gap-3">
-                            <img :src="'/images/me.png'" class="min-w-[35px] max-w-[35px] min-h-[35px] max-h-[35px] object-cover bg-cover rounded-full" alt="author-name" />
-                            <span class="uppercase text-xs font-semibold"> Mahi Bashar Akash </span>
-                        </div>
-                    </div>
-                    <!-- author -->
-
-                </a>
-                <!-- / blog column -->
-
-                <!-- blog column -->
-                <a href="javascript:void(0)" class="w-full relative overflow-hidden rounded-lg group bg-white duration-500 shadow-none hover:shadow-xl">
-
-                    <!-- blog image -->
-                    <div class="overflow-hidden min-h-[250px] max-h-[250px]">
-                        <img :src="'/images/portfolio-img-1.webp'" class="scale-100 duration-500 group-hover:scale-125 object-cover bg-cover w-full min-h-[250px] max-h-[250px]" alt="blog" />
-                    </div>
-                    <!-- / blog image -->
-
-                    <!-- category -->
-                    <div class="text-sm text-gray-600 px-5 mt-5">
-                        Learning Management System
-                    </div>
-                    <!-- / category -->
-
-                    <!-- title -->
-                    <div class="px-5 py-2 text-md font-semibold mb-3">
-                        <div class="min-h-[95px]">
-                            <div class="text-truncate-line-3">
-                                Provide course for training, original profession, appropriate effect with earn money affordable
-                            </div>
-                        </div>
-                    </div>
-                    <!-- / title -->
-
-                    <!-- author -->
-                    <div class="flex justify-between items-center gap-5 pb-7 px-5">
-                        <div class="inline-flex justify-start items-center gap-3">
-                            <img :src="'/images/me.png'" class="min-w-[35px] max-w-[35px] min-h-[35px] max-h-[35px] object-cover bg-cover rounded-full" alt="author-name" />
-                            <span class="uppercase text-xs font-semibold"> Mahi Bashar Akash </span>
-                        </div>
-                    </div>
-                    <!-- author -->
-
-                </a>
-                <!-- / blog column -->
-
-                <!-- blog column -->
-                <a href="javascript:void(0)" class="w-full relative overflow-hidden rounded-lg group bg-white duration-500 shadow-none hover:shadow-xl">
-
-                    <!-- blog image -->
-                    <div class="overflow-hidden min-h-[250px] max-h-[250px]">
-                        <img :src="'/images/portfolio-img-2.webp'" class="scale-100 duration-500 group-hover:scale-125 object-cover bg-cover w-full min-h-[250px] max-h-[250px]" alt="blog" />
-                    </div>
-                    <!-- / blog image -->
-
-                    <!-- category -->
-                    <div class="text-sm text-gray-600 px-5 mt-5">
-                        Chat Application System
-                    </div>
-                    <!-- / category -->
-
-                    <!-- title -->
-                    <div class="px-5 py-2 text-md font-semibold mb-3">
-                        <div class="min-h-[95px]">
-                            <div class="text-truncate-line-3">
-                                Chatting as like messenger for searching, writing, reading conversation etc.
-                            </div>
-                        </div>
-                    </div>
-                    <!-- / title -->
-
-                    <!-- author -->
-                    <div class="flex justify-between items-center gap-5 pb-7 px-5">
-                        <div class="inline-flex justify-start items-center gap-3">
-                            <img :src="'/images/me.png'" class="min-w-[35px] max-w-[35px] min-h-[35px] max-h-[35px] object-cover bg-cover rounded-full" alt="author-name" />
-                            <span class="uppercase text-xs font-semibold"> Mahi Bashar Akash </span>
-                        </div>
-                    </div>
-                    <!-- author -->
-
-                </a>
-                <!-- / blog column -->
-
-                <!-- blog column -->
-                <a href="javascript:void(0)" class="w-full relative overflow-hidden rounded-lg group bg-white duration-500 shadow-none hover:shadow-xl">
-
-                    <!-- blog image -->
-                    <div class="overflow-hidden min-h-[250px] max-h-[250px]">
-                        <img :src="'/images/portfolio-img-3.webp'" class="scale-100 duration-500 group-hover:scale-125 object-cover bg-cover w-full min-h-[250px] max-h-[250px]" alt="blog" />
-                    </div>
-                    <!-- / blog image -->
-
-                    <!-- category -->
-                    <div class="text-sm text-gray-600 px-5 mt-5">
-                        Hospital Management System
-                    </div>
-                    <!-- / category -->
-
-                    <!-- title -->
-                    <div class="px-5 py-2 text-md font-semibold mb-3">
-                        <div class="min-h-[95px]">
-                            <div class="text-truncate-line-3">
-                                operations like patient registration, doctor scheduling, billing, inventory, lab results, and staff management.
-                            </div>
-                        </div>
-                    </div>
-                    <!-- / title -->
-
-                    <!-- author -->
-                    <div class="flex justify-between items-center gap-5 pb-7 px-5">
-                        <div class="inline-flex justify-start items-center gap-3">
-                            <img :src="'/images/me.png'" class="min-w-[35px] max-w-[35px] min-h-[35px] max-h-[35px] object-cover bg-cover rounded-full" alt="author-name" />
-                            <span class="uppercase text-xs font-semibold"> Mahi Bashar Akash </span>
-                        </div>
-                    </div>
-                    <!-- author -->
-
-                </a>
-                <!-- / blog column -->
-
-            </div>
-            <!-- / blogs -->
-
-        </div>
-    </section>
-    <!-- / creative blog section -->
-
-    <!-- company logo section -->
-    <section class="w-full bg-white">
-        <div class="px-10 max-w-7xl mx-auto w-full py-16">
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-
-                <!-- company logo -->
-                <div class="w-full py-5 flex justify-center">
-                    <img :src="'/images/brand-2.webp'" class="opacity-30 hover:opacity-100 duration-500 object-contain bg-contain w-auto h-auto cursor-pointer" alt="brand" />
-                </div>
-                <!-- / company logo -->
-
-                <!-- company logo -->
-                <div class="w-full py-5 flex justify-center">
-                    <img :src="'/images/brand-3.webp'" class="opacity-30 hover:opacity-100 duration-500 object-contain bg-contain w-auto h-auto cursor-pointer" alt="brand" />
-                </div>
-                <!-- / company logo -->
-
-                <!-- company logo -->
-                <div class="w-full py-5 flex justify-center">
-                    <img :src="'/images/brand-4.webp'" class="opacity-30 hover:opacity-100 duration-500 object-contain bg-contain w-auto h-auto cursor-pointer" alt="brand" />
-                </div>
-                <!-- / company logo -->
-
-                <!-- company logo -->
-                <div class="w-full py-5 flex justify-center">
-                    <img :src="'/images/brand-5.webp'" class="opacity-30 hover:opacity-100 duration-500 object-contain bg-contain w-auto h-auto cursor-pointer" alt="brand" />
-                </div>
-                <!-- / company logo -->
-
-                <!-- company logo -->
-                <div class="w-full py-5 flex justify-center">
-                    <img :src="'/images/brand-6.webp'" class="opacity-30 hover:opacity-100 duration-500 object-contain bg-contain w-auto h-auto cursor-pointer" alt="brand" />
-                </div>
-                <!-- / company logo -->
-
-            </div>
-
-        </div>
-    </section>
-    <!-- / company logo section -->
 
 </template>
 

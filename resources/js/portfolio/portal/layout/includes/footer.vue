@@ -1,44 +1,49 @@
 <template>
 
     <footer class="w-full bg-black/85 py-16">
-        <div class="max-w-7xl mx-auto w-full px-10">
-            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+        <div class="max-w-7xl mx-auto w-full px-5">
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
                 <div class="py-5">
-                    <div class="w-full block mb-1 text-white"> Phone : </div>
-                    <div class="w-full block mb-4"> <a href="tel:+8801400125289" class="text-sm text-white/65 duration-500 hover:text-white"> +880 01400125289 </a> </div>
-                    <div class="w-full block mb-1 text-white"> Email : </div>
-                    <div class="w-full block mb-4"> <a href="mailto:mahibashar2000002@gmail.com" class="text-sm text-white/65 duration-500 hover:text-white"> mahibashar2000002@gmail.com </a> </div>
-                    <div class="w-full block mb-1 text-white"> Location : </div>
-                    <div class="w-full block mb-4"> <a href="https://www.google.com/maps/place/Dhanmondi,+Dhaka+1216,+Bangladesh" target="_blank" class="text-sm text-white/65 duration-500 hover:text-white"> Dhanmondi, Dhaka 1216, Bangladesh </a> </div>
-                </div>
-                <div class="py-5">
-                    <div class="text-white text-xl mb-5"> Projects </div>
-                    <div class="w-full block">
-                        <a :href="'/'" class="text-sm text-white/65 duration-500 hover:text-white block mb-3">
-                            Portfolio System
+                    <div class="w-full block mb-1 text-white"> Phone </div>
+                    <div class="w-full block mb-4">
+                        <a href="tel:+8801400125289" class="text-sm text-white/65 duration-500 hover:text-white">
+                            +880 01400125289
                         </a>
-                        <a :href="'/blog_template'" class="text-sm text-white/65 duration-500 hover:text-white block mb-3">
-                            Blogs System
+                    </div>
+                    <div class="w-full block mb-1 text-white"> Email </div>
+                    <div class="w-full block mb-4">
+                        <a href="mailto:mahibashar2000002@gmail.com" class="text-sm text-white/65 duration-500 hover:text-white">
+                            mahibashar2000002@gmail.com
                         </a>
-                        <a :href="'/ecommerce_template'" class="text-sm text-white/65 duration-500 hover:text-white block mb-3">
-                            Ecommerce System
-                        </a>
-                        <a :href="'/learning_management_template'" class="text-sm text-white/65 duration-500 hover:text-white block mb-3">
-                            Learning Management System
-                        </a>
-                        <a :href="'/chat_application_template'" class="text-sm text-white/65 duration-500 hover:text-white block mb-3">
-                            Chat Application System
-                        </a>
-                        <a :href="'/hospital_template'" class="text-sm text-white/65 duration-500 hover:text-white block mb-3">
-                            Hospital Management System
+                    </div>
+                    <div class="w-full block mb-1 text-white"> Location </div>
+                    <div class="w-full block mb-4">
+                        <a href="https://www.google.com/maps/place/Dhanmondi,+Dhaka+1216,+Bangladesh" target="_blank" class="text-sm text-white/65 duration-500 hover:text-white">
+                            Dhanmondi, Dhaka 1216, Bangladesh
                         </a>
                     </div>
                 </div>
                 <div class="py-5">
-                    <div class="text-white text-xl mb-5"> Quick Links </div>
+                    <div class="text-white text-xl mb-5"> Quick Link </div>
                     <div class="w-full block">
-                        <a href="javascript:void(0)" class="text-sm text-white/65 duration-500 hover:text-white block mb-3"> Documentation </a>
-                        <a href="javascript:void(0)" class="text-sm text-white/65 duration-500 hover:text-white block mb-3"> Resource </a>
+                        <a @click="scrollToSection('home')" class="cursor-pointer text-sm text-white/65 duration-500 hover:text-white block mb-3">
+                            Home
+                        </a>
+                        <a @click="scrollToSection('about_us')" class="cursor-pointer text-sm text-white/65 duration-500 hover:text-white block mb-3">
+                            About Us
+                        </a>
+                        <a @click="scrollToSection('services')" class="cursor-pointer text-sm text-white/65 duration-500 hover:text-white block mb-3">
+                            Services
+                        </a>
+                        <a @click="scrollToSection('why_choose_us')" class="cursor-pointer text-sm text-white/65 duration-500 hover:text-white block mb-3">
+                            Why Choose Us
+                        </a>
+                        <a @click="scrollToSection('team')" class="cursor-pointer text-sm text-white/65 duration-500 hover:text-white block mb-3">
+                            Our Team
+                        </a>
+                        <a @click="scrollToSection('testimonial')" class="cursor-pointer text-sm text-white/65 duration-500 hover:text-white block mb-3">
+                            Testimonial
+                        </a>
                     </div>
                 </div>
                 <div class="py-5">
@@ -68,7 +73,27 @@ export default {
 
     },
     methods: {
-
+        scrollToSection(id) {
+            const el = document.getElementById(id);
+            if (el) el.scrollIntoView({ behavior: 'smooth' });
+            history.replaceState(null, null, ' ');
+        },
+        initSectionObserver() {
+            const sections = document.querySelectorAll('section[id]');
+            this.observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            this.currentSection = entry.target.id;
+                        }
+                    });
+                },
+                {
+                    threshold: 0.5, // section visible at least 50%
+                }
+            );
+            sections.forEach((sec) => this.observer.observe(sec));
+        },
     }
 }
 
